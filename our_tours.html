@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
     <link rel="icon" href="images/l.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script nonce="84a158de-7f77-47a8-9f18-5359bd63bec1">(function (w, d) { !function (bg, bh, bi, bj) { bg[bi] = bg[bi] || {}; bg[bi].executed = []; bg.zaraz = { deferred: [], listeners: [] }; bg.zaraz.q = []; bg.zaraz._f = function (bk) { return function () { var bl = Array.prototype.slice.call(arguments); bg.zaraz.q.push({ m: bk, a: bl }) } }; for (const bm of ["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm); bg.zaraz.init = () => { var bn = bh.getElementsByTagName(bj)[0], bo = bh.createElement(bj), bp = bh.getElementsByTagName("title")[0]; bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text); bg[bi].x = Math.random(); bg[bi].w = bg.screen.width; bg[bi].h = bg.screen.height; bg[bi].j = bg.innerHeight; bg[bi].e = bg.innerWidth; bg[bi].l = bg.location.href; bg[bi].r = bh.referrer; bg[bi].k = bg.screen.colorDepth; bg[bi].n = bh.characterSet; bg[bi].o = (new Date).getTimezoneOffset(); if (bg.dataLayer) for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({ ...bu[1], ...bv[1] })), {}))) zaraz.set(bt[0], bt[1], { scope: "page" }); bg[bi].q = []; for (; bg.zaraz.q.length;) { const bw = bg.zaraz.q.shift(); bg[bi].q.push(bw) } bo.defer = !0; for (const bx of [localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => { try { bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by)) } catch{ bg[bi]["z_" + by.slice(7)] = bx.getItem(by) } })); bo.referrerPolicy = "origin"; bo.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi]))); bn.parentNode.insertBefore(bo, bn) };["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
     
     <title>SL Tour</title>
@@ -188,171 +189,377 @@
                                 <div class="gdlr-core-pbf-element">
                                     <div class="tourmaster-tour-item clearfix  tourmaster-tour-item-style-grid tourmaster-tour-item-column-2">
                                         <div class="tourmaster-tour-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-                                            <div class="gdlr-core-item-list  tourmaster-item-pdlr tourmaster-column-30 tourmaster-column-first">
+                                            <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
                                                 <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                    <!-- Tour Image -->
                                                     <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                        <a href="#"><img src="upload/Cape-Point-Tour.jpg" alt="" width="700" height="430" /></a>
+                                                        <a>
+                                                            <img src="upload/Cape-Point-Tour.jpg" alt="Cape Point Full-Day Tour with scenic stops" width="700" height="430" />
+                                                        </a>
                                                     </div>
+                                                    <!-- Tour Content -->
                                                     <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0"><a href="#" >Cape Point Tour</a></h3>
-                                                        <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R1,750</span><span class="tourmaster-head">per person</span></span>
+                                                        <!-- Tour Title -->
+                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
+                                                            <a >Cape Point Tour</a>
+                                                        </h3>
+                                                        <!-- Price Details -->
+                                                        <div class="tourmaster-tour-price-wrap">
+                                                            <span class="tourmaster-tour-price">
+                                                                <span class="tourmaster-tail">R1,750</span>
+                                                                <span class="tourmaster-head">per person</span>
+                                                            </span>
                                                         </div>
+                                                        <!-- Tour Info -->
                                                         <div class="tourmaster-tour-info-wrap clearfix">
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>Full day</div>
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location "><i class="fa fa-user"></i>Description :
+                                                            <!-- Duration -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="icon_clock_alt"></i> Full day
+                                                            </div>
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="fas fa-users"></i> Minimum Guests: 4
+                                                            </div>
+                                                            <!-- Highlights -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                                <i class="fas fa-star"></i> Highlights:
                                                                 <ul>
                                                                     <li>Camps Bay</li>
                                                                     <li>Hout Bay</li>
-                                                                    <li>Chapmans Peak drive</li>
-                                                                    <li>Ostrich farm</li>
-                                                                    <li>Cape of good Hope</li>
+                                                                    <li>Chapman's Peak Drive</li>
+                                                                    <li>Ostrich Farm</li>
+                                                                    <li>Cape of Good Hope</li>
                                                                     <li>Cape Point</li>
-                                                                    <li>Boulders Beach </li>
-                                                                    <li>Simons town</li>
+                                                                    <li>Boulders Beach</li>
+                                                                    <li>Simons Town</li>
                                                                 </ul>
                                                             </div>
-                                                            <div class="tourmaster-thumbnail-ribbon-cornor" id="div_bc98_1" style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;"> <strong>Included:</strong>Entrance fee, Lunch,Free Bottle of Water, Guide, vehicle.</div>                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-item-list  tourmaster-item-pdlr tourmaster-column-30">
-                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                        <a href=""><img src="upload/Winelands-Tour.jpg" alt="" width="700" height="430" /></a>
-                                                    </div>
-                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_1"><a href="" >Robben Island</a></h3>
-                                                        <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R1,500</span><span class="tourmaster-head">per person</span></span>
-                                                        </div>
-                                                        <div class="tourmaster-tour-info-wrap clearfix">
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>Day Tour</div>
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>min: 4 </div>
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location "><i class="fa fa-user"></i>Description :
-                                                            <ul>
-                                                                <li>Stellenbosch </li>
-                                                                <li>Franschhoek </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="tourmaster-thumbnail-ribbon-cornor" id="div_bc98_1" style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;"> <strong>Included:</strong> 3 wine farms with free tasting,Free Bottle of Water ,Guide, Vehicle.</div>                                                            
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-item-list  tourmaster-item-pdlr tourmaster-column-30 tourmaster-column-first">
-                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                        <a href="#"><img src="upload/Garden-Route-Tour.jpg" alt="" width="700" height="430" /></a>
-                                                    </div>
-                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_2"><a href="../switzerland-7-days-in-zurich-zermatt/index.html" >Garden Route Tour</a></h3>
-                                                        <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R6,500</span><span class="tourmaster-head">per person</span></span></div>
-                                                            <div class="tourmaster-tour-info-wrap clearfix">
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>3 day</div>
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location "><i class="fa fa-user"></i>Description :
+                                                            <!-- Included Features -->
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" 
+                                                                 id="div_bc98_1" 
+                                                                 style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">
+                                                                <strong>Included in your Cape Point Tour:</strong> 
                                                                 <ul>
-                                                                    <li>Knysna  </li>
-                                                                    <li>Tsitsikamma </li>
-                                                                    <li>Wilderness </li>
+                                                                    <li>Entrance fee</li>
+                                                                    <li>Lunch</li>
+                                                                    <li>Free bottled water</li>
+                                                                    <li>Guide</li>
+                                                                    <li>Comfortable vehicle</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
+                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                    <!-- Tour Image -->
+                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                        <a >
+                                                            <img src="upload/Winelands-Tour.jpg" alt="Robben Island Day Tour - Winelands" width="700" height="430" />
+                                                        </a>
+                                                    </div>
+                                                    <!-- Tour Content -->
+                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                        <!-- Tour Title -->
+                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_1">
+                                                            <a >Robben Island Day Tour</a>
+                                                        </h3>
+                                                        <!-- Price Details -->
+                                                        <div class="tourmaster-tour-price-wrap">
+                                                            <span class="tourmaster-tour-price">
+                                                                <span class="tourmaster-tail">R1,500</span>
+                                                                <span class="tourmaster-head">per person</span>
+                                                            </span>
+                                                        </div>
+                                                        <!-- Tour Info -->
+                                                        <div class="tourmaster-tour-info-wrap clearfix">
+                                                            <!-- Duration -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="icon_clock_alt"></i> Duration: Half Day Tour
+                                                            </div>
+                                                            <!-- Minimum Guests -->
+                                                            <!-- Description -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                                <i class="fa fa-star"></i> Highlights:
+                                                                <ul>
+                                                                    <li>Visit Stellenbosch</li>
+                                                                    <li>Explore Franschhoek</li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- Included Features -->
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" 
+                                                                 id="div_bc98_1" 
+                                                                 style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">
+                                                                <strong>Included in your Robben Island Day Tour:</strong> 
+                                                                <ul>
+                                                                    <li>Complimentary bottled water</li>
+                                                                    <li>Qualified tour guides</li>
+                                                                    <li>Comfortable vehicle</li>
+                                                                    <li>Pick up & Drop off</li>
+                                                                    <li>Free Tickets</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                            <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30 tourmaster-column-first">
+                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                    <!-- Tour Image -->
+                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                        <a >
+                                                            <img src="upload/Garden-Route-Tour.jpg" alt="Garden Route Tour - Knysna, Tsitsikamma, and Wilderness" width="700" height="430" />
+                                                        </a>
+                                                    </div>
+                                                    <!-- Tour Content -->
+                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                        <!-- Tour Title -->
+                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
+                                                            <a >Garden Route Tour</a>
+                                                        </h3>
+                                                        <!-- Price Details -->
+                                                        <div class="tourmaster-tour-price-wrap">
+                                                            <span class="tourmaster-tour-price">
+                                                                <span class="tourmaster-tail">R6,500</span>
+                                                                <span class="tourmaster-head">per person</span>
+                                                            </span>
+                                                        </div>
+                                                        <!-- Tour Info -->
+                                                        <div class="tourmaster-tour-info-wrap clearfix">
+                                                            <!-- Duration -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="icon_clock_alt"></i> 3-Day Tour
+                                                            </div>
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="fas fa-users"></i> Minimum Guests: 4
+                                                            </div>
+                                                            <!-- Highlights -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                                <i class="fas fa-star"></i> Highlights:
+                                                                <ul>
+                                                                    <li>Knysna</li>
+                                                                    <li>Tsitsikamma</li>
+                                                                    <li>Wilderness</li>
                                                                     <li>Mossel Bay</li>
-                                                                    <li>Botlierskop game reserve </li>
+                                                                    <li>Botlierskop Game Reserve</li>
                                                                 </ul>
                                                             </div>
-                                                            <div class="tourmaster-thumbnail-ribbon-cornor" id="div_bc98_1" style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;"> <strong>Included:</strong> shared Accommodation,Free Bottle of Water , breakfast and Lunch,Guide</div>                                                            
+                                                            <!-- Included Features -->
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" 
+                                                                 id="div_bc98_1" 
+                                                                 style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">
+                                                                <strong>Included in your Garden Route Tour:</strong>
+                                                                <ul>
+                                                                    <li>Shared accommodation</li>
+                                                                    <li>Free bottled water</li>
+                                                                    <li>Breakfast and lunch</li>
+                                                                    <li>Professional guide</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="gdlr-core-item-list  tourmaster-item-pdlr tourmaster-column-30">
+                                            
+                                            <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
                                                 <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                    <!-- Tour Image -->
                                                     <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                        <a href="../italy-6-days-in-rome-venice-milan/index.html"><img src="upload/cape-City-Tour.jpg" alt="" width="700" height="430" /></a>
+                                                        <a >
+                                                            <img src="upload/cape-City-Tour.jpg" alt="Cape City Tour - Castle of Good Hope, Bo Kaap & More" width="700" height="430" />
+                                                        </a>
                                                     </div>
+                                                    <!-- Tour Content -->
                                                     <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_3"><a href="../italy-6-days-in-rome-venice-milan/index.html" >City Tour</a></h3>
-                                                        <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R700</span><span class="tourmaster-head">per person</span></span></div>
+                                                        <!-- Tour Title -->
+                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_3">
+                                                            <a >City Tour</a>
+                                                        </h3>
+                                                        <!-- Price Details -->
+                                                        <div class="tourmaster-tour-price-wrap">
+                                                            <span class="tourmaster-tour-price">
+                                                                <span class="tourmaster-tail">R700</span>
+                                                                <span class="tourmaster-head">per person</span>
+                                                            </span>
+                                                        </div>
+                                                        <!-- Tour Info -->
                                                         <div class="tourmaster-tour-info-wrap clearfix">
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>3 hrs Tour</div>
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location "><i class="fa fa-user"></i>Description :
+                                                            <!-- Duration -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="icon_clock_alt"></i> 3-hour Tour
+                                                            </div>
+                                                            <!-- Highlights -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="fas fa-users"></i> Minimum Guests: 4
+                                                            </div>
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                                <i class="fas fa-star"></i> Highlights:
                                                                 <ul>
-                                                                    <li>Castle of Good Hope  </li>
-                                                                    <li>Bo Kaap </li>
-                                                                    <li>Green Market Square </li>
+                                                                    <li>Castle of Good Hope</li>
+                                                                    <li>Bo Kaap</li>
+                                                                    <li>Green Market Square</li>
                                                                     <li>Company Gardens</li>
                                                                 </ul>
                                                             </div>
-                                                            <div class="tourmaster-thumbnail-ribbon-cornor" id="div_bc98_1" style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;"> <strong>Included:</strong> Lunch,Free Bottle of Water ,Guided tour, Vehicle.</div>                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-item-list  tourmaster-item-pdlr tourmaster-column-30 tourmaster-column-first">
-                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                        <a href="../america-2-days-in-lake-tahoe/index.html"><img src="upload/Township-Tours.jpg" alt="" width="700" height="430" /></a>
-                                                    </div>
-                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_4"><a href="../america-2-days-in-lake-tahoe/index.html" >Township Tours</a></h3>
-                                                        <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R700</span><span class="tourmaster-head">per person</span></span></div>
-                                                      
-                                                        <div class="tourmaster-tour-info-wrap clearfix">
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>4 hrs Tour</div>
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location "><i class="fa fa-user"></i>Options :
+                                                            <!-- Included Features -->
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" 
+                                                                 id="div_bc98_1" 
+                                                                 style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">
+                                                                <strong>Included in your City Tour:</strong>
                                                                 <ul>
-                                                                    <li>Langa  </li>
-                                                                    <li>Khayelitsha </li>
+                                                                    <li>Lunch</li>
+                                                                    <li>Free bottled water</li>
+                                                                    <li>Guided tour</li>
+                                                                    <li>Vehicle</li>
                                                                 </ul>
                                                             </div>
-                                                            <div class="tourmaster-thumbnail-ribbon-cornor" id="div_bc98_1" style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;"> <strong>Included:</strong> Lunch(African Food),Free Bottle of Water ,Guided tour, vehicle</div>                                                            
-                                                        </div>                                                   
-                                                     </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="gdlr-core-item-list  tourmaster-item-pdlr tourmaster-column-30">
-                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                        <a href=""><img src="upload/Winelands-Tour.jpg" alt="" width="700" height="430" /></a>
+                                            
+                                         <!-- Township Tours -->
+                                        <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30 tourmaster-column-first">
+                                            <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                    <a>
+                                                        <img src="upload/Township-Tours.jpg" alt="Township Tours - Langa and Khayelitsha" width="700" height="430" />
+                                                    </a>
+                                                </div>
+                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
+                                                        <a >Township Tours</a>
+                                                    </h3>
+                                                    <div class="tourmaster-tour-price-wrap">
+                                                        <span class="tourmaster-tour-price">
+                                                            <span class="tourmaster-tail">R700</span>
+                                                            <span class="tourmaster-head">per person</span>
+                                                        </span>
                                                     </div>
-                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_1"><a href="" >Winelands Tour</a></h3>
-                                                        <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R1,600</span><span class="tourmaster-head">per person</span></span>
+                                                    <div class="tourmaster-tour-info-wrap clearfix">
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                            <i class="icon_clock_alt"></i> 4 hrs Tour
                                                         </div>
-                                                        <div class="tourmaster-tour-info-wrap clearfix">
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>Day Tour</div>
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location "><i class="fa fa-user"></i>Description :
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                            <i class="fas fa-users"></i> Minimum Guests: 4
+                                                        </div>
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                            <i class="fas fa-cogs"></i> Options:
                                                             <ul>
-                                                                <li>Stellenbosch </li>
-                                                                <li>Franschhoek </li>
+                                                                <li>Langa</li>
+                                                                <li>Khayelitsha</li>
                                                             </ul>
                                                         </div>
-                                                        <div class="tourmaster-thumbnail-ribbon-cornor" id="div_bc98_1" style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;"> <strong>Included:</strong> 3 wine farms with free tasting,Free Bottle of Water , Guide, Vehicle.</div>                                                            
-
+                                                        <div class="tourmaster-thumbnail-ribbon-corner" 
+                                                            style="background-color: #ff7b00; color: #ffffff; font-size: 15px;">
+                                                            <strong>Included in your Township Tour:</strong>
+                                                            <ul>
+                                                                <li>African lunch (traditional cuisine)</li>
+                                                                <li>Free bottled water</li>
+                                                                <li>Guided tour with local expert</li>
+                                                                <li>Comfortable transport by vehicle</li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="gdlr-core-item-list  tourmaster-item-pdlr tourmaster-column-30">
-                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                        <a href="../japan-5-days-in-tokyo-fujikawaguchiko/index.html"><img src="upload/West-Coast.jpg" alt="" width="700" height="430" /></a>
+                                        </div>
+
+                                        <!-- Winelands Tour -->
+                                        <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
+                                            <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                    <a >
+                                                        <img src="upload/Winelands-Tour.jpg" alt="Winelands Tour - Stellenbosch and Franschhoek" width="700" height="430" />
+                                                    </a>
+                                                </div>
+                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title"  id="h3_bc98_0">
+                                                        <a >Winelands Tour</a>
+                                                    </h3>
+                                                    <div class="tourmaster-tour-price-wrap">
+                                                        <span class="tourmaster-tour-price">
+                                                            <span class="tourmaster-tail">R1,600</span>
+                                                            <span class="tourmaster-head">per person</span>
+                                                        </span>
                                                     </div>
-                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_5"><a href="../japan-5-days-in-tokyo-fujikawaguchiko/index.html" >West Coast</a></h3>
-                                                        <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R1,700</span><span class="tourmaster-head">per person</span></span></div>
-                                                        
-                                                        <div class="tourmaster-tour-info-wrap clearfix">
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>Day Tour</div>
-                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location "><i class="fa fa-user"></i>Description :
-                                                                <ul>
-                                                                    <li>West Coast Tour  </li>
-                                                                    <li>khwa try Nature Reserve </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="tourmaster-thumbnail-ribbon-cornor" id="div_bc98_1" style="background-color: #ff7b00; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;"> <strong>Included:</strong> Lunch,Guided tour,Free Bottle of Water , Vehicle</div>                                                                                                                    </div>
+                                                    <div class="tourmaster-tour-info-wrap clearfix">
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                            <i class="icon_clock_alt"></i> Full Day Tour
+                                                        </div>
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                            <i class="fas fa-users"></i> Minimum Guests: 4
+                                                        </div>
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                            <i class="fa fa-map-marker"></i> Locations: 
+                                                            <ul>
+                                                                <li>Stellenbosch</li>
+                                                                <li>Franschhoek</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tourmaster-thumbnail-ribbon-corner" 
+                                                            style="background-color: #ff7b00; color: #ffffff; font-size: 15px;">
+                                                            <strong>Included in your Winelands Tour:</strong>
+                                                            <ul>
+                                                                <li>Visits to 3 premium wine farms with free tastings</li>
+                                                                <li>Free bottled water</li>
+                                                                <li>Expert guide for the day</li>
+                                                                <li>Comfortable transport by vehicle</li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <!-- West Coast Tour -->
+                                        <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
+                                            <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                    <a>
+                                                        <img src="upload/West-Coast.jpg" alt="West Coast Tour - Visit Nature Reserves and Scenic Views" width="700" height="430" />
+                                                    </a>
+                                                </div>
+                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
+                                                        <a >West Coast</a>
+                                                    </h3>
+                                                    <div class="tourmaster-tour-price-wrap">
+                                                        <span class="tourmaster-tour-price">
+                                                            <span class="tourmaster-tail">R1,700</span>
+                                                            <span class="tourmaster-head">per person</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="tourmaster-tour-info-wrap clearfix">
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                            <i class="icon_clock_alt"></i> Full Day Tour
+                                                        </div>
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                            <i class="fas fa-users"></i> Minimum Guests: 4
+                                                        </div>
+                                                        <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                            <i class="fa fa-map-marker"></i> Locations:
+                                                            <ul>
+                                                                <li>West Coast Tour</li>
+                                                                <li>Khwa Try Nature Reserve</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tourmaster-thumbnail-ribbon-corner" 
+                                                            style="background-color: #ff7b00; color: #ffffff; font-size: 15px;">
+                                                            <strong>Included in your West Coast Tour:</strong>
+                                                            <ul>
+                                                                <li>Delicious lunch</li>
+                                                                <li>Guided tour with expert local guide</li>
+                                                                <li>Free bottled water</li>
+                                                                <li>Comfortable transport by vehicle</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                         </div>
                                     </div>
                                 </div>
