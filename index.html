@@ -791,6 +791,73 @@
             document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
         } /*]]>*/
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "SL Tours",
+            "url": "https://sl-tours.com",
+            "logo": "https://sl-tours.com/logo.png",
+            "image": "https://sl-tours.com/images/tour-banner.jpg",
+            "description": "SL Tours is a Cape Town-based tour operator offering guided tours and excursions across South Africa, including Cape Point, Winelands, and the Garden Route.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "23970 Racaza Street",
+              "addressLocality": "Cape Town",
+              "addressRegion": "Western Cape",
+              "postalCode": "8000",
+              "addressCountry": "ZA"
+            },
+            "telephone": "+27 67 012 7776",
+            "email": "tours.st@outlook.com",
+            "sameAs": [
+              "https://www.facebook.com/SLTours",
+              "https://www.instagram.com/SLTours",
+              "https://twitter.com/SLTours"
+            ],
+            "service": [
+              {
+                "@type": "TouristTrip",
+                "name": "Cape Point Tour",
+                "description": "A full-day tour exploring Cape Point, Boulders Beach, and Hout Bay.",
+                "price": "R1750",
+                "priceCurrency": "ZAR",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "1750",
+                  "priceCurrency": "ZAR",
+                  "availability": "https://schema.org/InStock"
+                }
+              },
+              {
+                "@type": "TouristTrip",
+                "name": "Winelands Wine Tasting Tour",
+                "description": "A guided tour to three renowned wine farms in Stellenbosch, Franschhoek, and Paarl.",
+                "price": "R1600",
+                "priceCurrency": "ZAR",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "1600",
+                  "priceCurrency": "ZAR",
+                  "availability": "https://schema.org/InStock"
+                }
+              },
+              {
+                "@type": "TouristTrip",
+                "name": "Garden Route Tour",
+                "description": "A three-day tour along the scenic Garden Route, visiting Knysna, Plettenberg Bay, and Tsitsikamma National Park.",
+                "price": "R6500",
+                "priceCurrency": "ZAR",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "6500",
+                  "priceCurrency": "ZAR",
+                  "availability": "https://schema.org/InStock"
+                }
+              }
+            ]
+          }          
+        </script>
 
 </body>
 </html>
