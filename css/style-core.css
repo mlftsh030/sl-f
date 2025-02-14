@@ -5639,7 +5639,6 @@ div.nsl-container .nsl-button-google[data-skin="light"] {
 #i_91da_6{font-size: 18px ;color: #ffffff ;margin-right: 20px ;}
 #i_91da_7{font-size: 18px ;color: #ffffff ;margin-right: 20px ;}
 #i_91da_8{font-size: 18px ;color: #ffffff ;margin-right: 20px ;}
-
 /* Pop-Up Form Styling */
 
 /* Pop-up overlay */
@@ -5673,10 +5672,7 @@ div.nsl-container .nsl-button-google[data-skin="light"] {
     cursor: pointer;
 }
 
-h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 
 .form-row {
     margin-bottom: 15px;
