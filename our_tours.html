@@ -604,12 +604,52 @@
                                                         </div>
                                                         <!-- Included Features -->
                                                         <div class="tourmaster-thumbnail-ribbon-corner" 
-                                                            style="background-color: #ff7b00; color: #ffffff; font-size: 15px;">
-                                                            
-                                                            <button class="tourmaster-tour-price-wrap book-now-button" style="background-color: #ff7b00; color: #fff; padding: 10px 70px; border: none; border-radius: 5px; cursor: pointer; margin-top: 440px;">
-                                                                Book This Tour <i style="color: black; font-weight: 20px;">Rate On Request</i>
-                                                             </button>
-                                                        </div>
+                                                        style="background-color: #ff7b00; color: #ffffff; font-size: 15px;">
+                                                        
+                                                        <button class="tourmaster-tour-price-wrap book-now-button">
+                                                            Book This Tour <i style="color: black; font-weight: bold;">Rate On Request</i>
+                                                        </button>
+                                                    </div>
+                                                    
+                                                    <style>
+                                                        /* Base button styling */
+                                                        .book-now-button {
+                                                            background-color: #ff7b00;
+                                                            color: #fff;
+                                                            padding: 10px 20px; /* Default padding */
+                                                            border: none;
+                                                            border-radius: 5px;
+                                                            cursor: pointer;
+                                                            font-size: 15px; /* Default font size */
+                                                            width: 100%; /* Full width on smaller screens */
+                                                            max-width: 300px; /* Limit maximum width */
+                                                            margin-top: 390px; /* Default margin */
+                                                            transition: background-color 0.3s ease; /* Smooth hover effect */
+                                                        }
+                                                    
+                                                        /* Hover effect */
+                                                        .book-now-button:hover {
+                                                            background-color: #e56a00; /* Darker shade on hover */
+                                                        }
+                                                    
+                                                        /* Responsive adjustments */
+                                                        @media (min-width: 768px) {
+                                                            .book-now-button {
+                                                                padding: 10px 70px; /* Larger padding for bigger screens */
+                                                                margin-top: 440px; /* Adjust margin for larger screens */
+                                                                width: auto; /* Allow button to shrink to content */
+                                                            }
+                                                        }
+                                                    
+                                                        @media (max-width: 480px) {
+                                                            .book-now-button {
+                                                                font-size: 14px; /* Smaller font size for mobile */
+                                                                padding: 8px 15px; /* Smaller padding for mobile */
+                                                                margin-top: 440px; /* Adjust margin for mobile */
+                                                            }
+                                                        }
+                                                    </style>
+                                                    
                                                         <!-- Book Now Button -->
                                                         
                                                     </div>
