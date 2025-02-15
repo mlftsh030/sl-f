@@ -790,6 +790,26 @@
             }
         });
     </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("JTkKBh9AbQxeTMZKp"); // Replace with your EmailJS user ID
+        })();
+
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+        
+            // Collect form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const call = document.getElementById("phone").value;
+            const message = document.getElementById("message").value;
+        
+           
+            var url  = "http://wa.me/+27670127776"+"?text="+"*This is a massage from your website SL tours.* %0a" +"Name :"+name+"%0a" +"Email : "+email+"%0a"+"Message : "+message+ "%0a%0a";
+
+            window.open(url,'_blank').focus();
+        }
+    </script>
 
 </body>
 </html>
