@@ -5702,3 +5702,50 @@ div.nsl-container .nsl-button-google[data-skin="light"] {
 .submit-button:hover {
     background-color: #e56a00;
 }
+.tourmaster-tour-book-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7b00;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tourmaster-tour-book-now-button:hover {
+    background-color: #e56b00;
+}
+    /* Updated Included Features Section */
+    .tourmaster-thumbnail-ribbon-corner {
+        background-color: #ff7b00;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        border-radius: 15px; /* Rounded corners */
+        padding: 20px; /* Add padding for better spacing */
+        margin-top: 20px; /* Add margin to separate from other content */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    }
+
+    .tourmaster-thumbnail-ribbon-corner strong {
+        display: block;
+        margin-bottom: 10px; /* Add space below the heading */
+        font-size: 18px; /* Slightly larger font for the heading */
+    }
+
+    .tourmaster-thumbnail-ribbon-corner ul {
+        list-style-type: none; /* Remove default bullet points */
+        padding-left: 0; /* Remove default padding */
+    }
+
+    .tourmaster-thumbnail-ribbon-corner ul li {
+        padding: 8px 0; /* Add padding to list items */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add a subtle border between items */
+    }
+
+    .tourmaster-thumbnail-ribbon-corner ul li:last-child {
+        border-bottom: none; /* Remove border from the last item */
+    }
