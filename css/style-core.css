@@ -5749,3 +5749,39 @@ div.nsl-container .nsl-button-google[data-skin="light"] {
     .tourmaster-thumbnail-ribbon-corner ul li:last-child {
         border-bottom: none; /* Remove border from the last item */
     }
+    /* Base styles for the buttons */
+    .rate-button {
+        background-color: #00af87; /* TripAdvisor button color */
+        color: #ffffff;
+        padding: 15px 30px;
+        border-radius: 3px;
+        margin-right: 10px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .rate-button:last-child {
+        background-color: #4285f4; /* Google button color */
+        margin-right: 0; /* Remove margin for the last button */
+    }
+
+    .rate-button:hover {
+        opacity: 0.9; /* Add hover effect */
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .rate-button {
+            display: block; /* Stack buttons vertically on smaller screens */
+            width: 100%; /* Full width */
+            margin-right: 0; /* Remove margin */
+            margin-bottom: 10px; /* Add space between stacked buttons */
+            text-align: center; /* Center text */
+        }
+
+        .rate-button:last-child {
+            margin-bottom: 0; /* Remove margin for the last button */
+        }
+    }
