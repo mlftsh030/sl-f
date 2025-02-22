@@ -15,7 +15,7 @@
     <script nonce="84a158de-7f77-47a8-9f18-5359bd63bec1">(function (w, d) { !function (bg, bh, bi, bj) { bg[bi] = bg[bi] || {}; bg[bi].executed = []; bg.zaraz = { deferred: [], listeners: [] }; bg.zaraz.q = []; bg.zaraz._f = function (bk) { return function () { var bl = Array.prototype.slice.call(arguments); bg.zaraz.q.push({ m: bk, a: bl }) } }; for (const bm of ["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm); bg.zaraz.init = () => { var bn = bh.getElementsByTagName(bj)[0], bo = bh.createElement(bj), bp = bh.getElementsByTagName("title")[0]; bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text); bg[bi].x = Math.random(); bg[bi].w = bg.screen.width; bg[bi].h = bg.screen.height; bg[bi].j = bg.innerHeight; bg[bi].e = bg.innerWidth; bg[bi].l = bg.location.href; bg[bi].r = bh.referrer; bg[bi].k = bg.screen.colorDepth; bg[bi].n = bh.characterSet; bg[bi].o = (new Date).getTimezoneOffset(); if (bg.dataLayer) for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({ ...bu[1], ...bv[1] })), {}))) zaraz.set(bt[0], bt[1], { scope: "page" }); bg[bi].q = []; for (; bg.zaraz.q.length;) { const bw = bg.zaraz.q.shift(); bg[bi].q.push(bw) } bo.defer = !0; for (const bx of [localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => { try { bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by)) } catch{ bg[bi]["z_" + by.slice(7)] = bx.getItem(by) } })); bo.referrerPolicy = "origin"; bo.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi]))); bn.parentNode.insertBefore(bo, bn) };["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
     
     <title>SL Tour</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic%2Cgreek-ext%2Cgreek&amp;ver=4.9.8' type='text/css' media='all' />
     <link rel='stylesheet' href='plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' />
     <link rel='stylesheet' href='plugins/tourmaster/plugins/elegant-font/style.css' type='text/css' media='all' />
@@ -29,28 +29,25 @@
 </head>
 
 <body class="home page-template-default page page-id-2039 gdlr-core-body tourmaster-body woocommerce-no-js traveltour-body traveltour-body-front traveltour-full  traveltour-with-sticky-navigation gdlr-core-link-to-lightbox">
-    <div class="traveltour-mobile-header-wrap">
+  <div class="traveltour-mobile-header-wrap">
         <div class="traveltour-top-bar">
             <div class="traveltour-top-bar-background"></div>
             
             <div class="traveltour-top-bar-container clearfix traveltour-container ">
                 <div class="traveltour-top-bar-left traveltour-item-pdlr travel-tour-hide-on-mobile">
-                    <i class="fa fa-phone" id="i_341d_0"></i> +27 67 012 7776
-                    <i class="fa fa-envelope-o" id="i_341d_1"></i> tours.st@outlook.com
+                    <i class="fa fa-phone" id="i_b45c_0" href="tel:+27 67 012 7776"></i> +27 67 012 7776 
+                    <i class="fa fa-envelope-o" href="mailto:tours.st@outlook.com" id="i_b45c_1"></i> tours.st@outlook.com
                 </div>
                 <div class="traveltour-top-bar-right traveltour-item-pdlr">
                     <div class="traveltour-top-bar-right-social">
-                        <a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="facebook">
-                            <i class="fa fa-facebook" ></i>
+                        <a href="https://www.instagram.com/YourInstagramPage" target="_blank" class="traveltour-top-bar-social-icon" title="instagram">
+                            <i class="fa fa-instagram"></i>
                         </a>
-                        <a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="flickr">
-                            <i class="fa fa-flickr" ></i>
+                        <a href="https://www.tiktok.com/@sl_tours?_t=ZM-8u756lBn3rD&_r=1" target="_blank" class="traveltour-top-bar-social-icon" title="tiktok">
+                            <i class="fa fa-tiktok"></i>
                         </a>
-                        <a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="google-plus">
-                            <i class="fa fa-google-plus" ></i>
-                        </a>
-                        <a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="twitter">
-                            <i class="fa fa-twitter" ></i>
+                        <a href="https://www.google.com/YourGooglePage" target="_blank" class="traveltour-top-bar-social-icon" title="google">
+                            <i class="fa fa-google"></i>
                         </a>
                     </div>
                 </div>
@@ -89,12 +86,11 @@
                                 <li class="menu-item"><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
-                            <div class="traveltour-navigation-slide-bar" id="traveltour-navigation-slide-bar"></div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <div class="traveltour-body-outer-wrapper ">
         <div class="traveltour-body-wrapper clearfix  traveltour-with-transparent-header traveltour-with-frame">
             <div class="traveltour-header-background-transparent">
@@ -108,17 +104,14 @@
                     </div>
                     <div class="traveltour-top-bar-right traveltour-item-pdlr">
                         <div class="traveltour-top-bar-right-social">
-                            <a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="facebook">
-                                <i class="fa fa-facebook" ></i>
+                            <a href="https://www.instagram.com/YourInstagramPage" target="_blank" class="traveltour-top-bar-social-icon" title="instagram">
+                                <i class="fa fa-instagram"></i>
                             </a>
-                            <a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="flickr">
-                                <i class="fa fa-flickr" ></i>
+                            <a href="https://www.tiktok.com/@sl_tours?_t=ZM-8u756lBn3rD&_r=1" target="_blank" class="traveltour-top-bar-social-icon" title="tiktok">
+                                <i class="fa fa-tiktok"></i>
                             </a>
-                            <a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="google-plus">
-                                <i class="fa fa-google-plus" ></i>
-                            </a>
-                            <a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="twitter">
-                                <i class="fa fa-twitter" ></i>
+                            <a href="https://www.google.com/YourGooglePage" target="_blank" class="traveltour-top-bar-social-icon" title="google">
+                                <i class="fa fa-google"></i>
                             </a>
                         </div>
 
@@ -328,7 +321,7 @@
                     <div class="traveltour-footer-container traveltour-container clearfix">
                         <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-20">
                             <div id="text-1" class="widget widget_text traveltour-widget">
-                                <div class="textwidget"><img src="images/logo.png" alt="" /> <span class="gdlr-core-space-shortcode" id="span_29f0_13"></span> SL Tours offers excellent oppotunities to explore South Africa. <span class="gdlr-core-space-shortcode" id="span_29f0_14"></span> <img src="upload/award-2.svg" alt="" width="140" id="img_29f0_0" /> <img src="upload/award-.png" alt="" width="65" /></div>
+                                <div class="textwidget"><img src="images/logo.png" alt="" /> <span class="gdlr-core-space-shortcode" id="span_29f0_13"></span> SL Tours offers excellent opportunities to explore South Africa. <span class="gdlr-core-space-shortcode" id="span_29f0_14"></span> <img src="upload/award-2.svg" alt="" width="140" id="img_29f0_0" /> <img src="upload/award-1.png" alt="" width="65" /></div>
                             </div>
                         </div>
                         <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-20">
@@ -354,7 +347,13 @@
                                         <br /> <span class="gdlr-core-space-shortcode" style="margin-top: -13px ;"></span>
                                         <br /> Email : tours.st@outlook.com</p>
                                     <p><span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
-                                        <br /> <a href="#" target="_blank"><i class="fa fa-facebook" style="font-size: 18px ;color: #ffffff ;margin-right: 20px ;"  ></i></a> <a href="#" target="_blank"><i class="fa fa-twitter" style="font-size: 18px ;color: #ffffff ;margin-right: 20px ;"  ></i></a> <a href="#" target="_blank"><i class="fa fa-linkedin" style="font-size: 18px ;color: #ffffff ;margin-right: 20px ;"  ></i></a> <a href="#" target="_blank"><i class="fa fa-pinterest-p" style="font-size: 18px ;color: #ffffff ;margin-right: 20px ;"  ></i></a> <a href="#" target="_blank"><i class="fa fa-vimeo" style="font-size: 18px ;color: #ffffff ;margin-right: 20px ;"  ></i></a></p>
+                                        <br /> 
+                                        <!-- Updated Social Media Icons -->
+                                        <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fab fa-facebook" style="font-size: 18px; color: #ffffff; margin-right: 20px;"></i></a>
+                                        <a href="https://www.instagram.com/YourInstagramPage" target="_blank"><i class="fab fa-instagram" style="font-size: 18px; color: #ffffff; margin-right: 20px;"></i></a>
+                                        <a href="https://www.tiktok.com/@YourTikTokPage" target="_blank"><i class="fab fa-tiktok" style="font-size: 18px; color: #ffffff; margin-right: 20px;"></i></a>
+                                        <a href="https://www.google.com/search?q=YourGoogleBusinessLink" target="_blank"><i class="fab fa-google" style="font-size: 18px; color: #ffffff; margin-right: 20px;"></i></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
