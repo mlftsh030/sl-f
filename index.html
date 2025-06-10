@@ -2,9 +2,8 @@
 <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
 
 <head>
-<script>
-
-</script>
+    <script>
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,11 +15,73 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
     <link rel="icon" href="images/l.jpg" type="image/x-icon">
-    <script nonce="84a158de-7f77-47a8-9f18-5359bd63bec1">(function (w, d) { !function (bg, bh, bi, bj) { bg[bi] = bg[bi] || {}; bg[bi].executed = []; bg.zaraz = { deferred: [], listeners: [] }; bg.zaraz.q = []; bg.zaraz._f = function (bk) { return function () { var bl = Array.prototype.slice.call(arguments); bg.zaraz.q.push({ m: bk, a: bl }) } }; for (const bm of ["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm); bg.zaraz.init = () => { var bn = bh.getElementsByTagName(bj)[0], bo = bh.createElement(bj), bp = bh.getElementsByTagName("title")[0]; bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text); bg[bi].x = Math.random(); bg[bi].w = bg.screen.width; bg[bi].h = bg.screen.height; bg[bi].j = bg.innerHeight; bg[bi].e = bg.innerWidth; bg[bi].l = bg.location.href; bg[bi].r = bh.referrer; bg[bi].k = bg.screen.colorDepth; bg[bi].n = bh.characterSet; bg[bi].o = (new Date).getTimezoneOffset(); if (bg.dataLayer) for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({ ...bu[1], ...bv[1] })), {}))) zaraz.set(bt[0], bt[1], { scope: "page" }); bg[bi].q = []; for (; bg.zaraz.q.length;) { const bw = bg.zaraz.q.shift(); bg[bi].q.push(bw) } bo.defer = !0; for (const bx of [localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => { try { bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by)) } catch{ bg[bi]["z_" + by.slice(7)] = bx.getItem(by) } })); bo.referrerPolicy = "origin"; bo.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi]))); bn.parentNode.insertBefore(bo, bn) };["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
-    
+    <script nonce="84a158de-7f77-47a8-9f18-5359bd63bec1">
+        (function(w, d) {
+            ! function(bg, bh, bi, bj) {
+                bg[bi] = bg[bi] || {};
+                bg[bi].executed = [];
+                bg.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                bg.zaraz.q = [];
+                bg.zaraz._f = function(bk) {
+                    return function() {
+                        var bl = Array.prototype.slice.call(arguments);
+                        bg.zaraz.q.push({
+                            m: bk,
+                            a: bl
+                        })
+                    }
+                };
+                for (const bm of["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm);
+                bg.zaraz.init = () => {
+                    var bn = bh.getElementsByTagName(bj)[0],
+                        bo = bh.createElement(bj),
+                        bp = bh.getElementsByTagName("title")[0];
+                    bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text);
+                    bg[bi].x = Math.random();
+                    bg[bi].w = bg.screen.width;
+                    bg[bi].h = bg.screen.height;
+                    bg[bi].j = bg.innerHeight;
+                    bg[bi].e = bg.innerWidth;
+                    bg[bi].l = bg.location.href;
+                    bg[bi].r = bh.referrer;
+                    bg[bi].k = bg.screen.colorDepth;
+                    bg[bi].n = bh.characterSet;
+                    bg[bi].o = (new Date).getTimezoneOffset();
+                    if (bg.dataLayer)
+                        for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({...bu[1],
+                                ...bv[1]
+                            })), {}))) zaraz.set(bt[0], bt[1], {
+                            scope: "page"
+                        });
+                    bg[bi].q = [];
+                    for (; bg.zaraz.q.length;) {
+                        const bw = bg.zaraz.q.shift();
+                        bg[bi].q.push(bw)
+                    }
+                    bo.defer = !0;
+                    for (const bx of[localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => {
+                        try {
+                            bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by))
+                        } catch {
+                            bg[bi]["z_" + by.slice(7)] = bx.getItem(by)
+                        }
+                    }));
+                    bo.referrerPolicy = "origin";
+                    bo.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi])));
+                    bn.parentNode.insertBefore(bo, bn)
+                };
+                ["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+
     <title>SL Tour</title>
 
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic%2Cgreek-ext%2Cgreek&amp;ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic%2Cgreek-ext%2Cgreek&amp;ver=4.9.8'
+        type='text/css' media='all' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel='stylesheet' href='plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' />
     <link rel='stylesheet' href='plugins/tourmaster/plugins/elegant-font/style.css' type='text/css' media='all' />
@@ -37,10 +98,10 @@
     <div class="traveltour-mobile-header-wrap">
         <div class="traveltour-top-bar">
             <div class="traveltour-top-bar-background"></div>
-            
+
             <div class="traveltour-top-bar-container clearfix traveltour-container ">
                 <div class="traveltour-top-bar-left traveltour-item-pdlr travel-tour-hide-on-mobile">
-                    <i class="fa fa-phone" id="i_b45c_0" href="tel:+27 67 012 7776"></i> +27 67 012 7776 
+                    <i class="fa fa-phone" id="i_b45c_0" href="tel:+27 67 012 7776"></i> +27 67 012 7776
                     <i class="fa fa-envelope-o" href="mailto:tours.st@outlook.com" id="i_b45c_1"></i> tours.st@outlook.com
                 </div>
                 <div class="traveltour-top-bar-right traveltour-item-pdlr">
@@ -102,24 +163,24 @@
                 <div class="traveltour-top-bar">
                     <div class="traveltour-top-bar-background"></div>
                     <div class="traveltour-top-bar-container clearfix traveltour-container ">
-                        
-                    <div class="traveltour-top-bar-left traveltour-item-pdlr">
-                        <i class="fa fa-phone" id="i_b45c_0" href="tel:+27 67 012 7776"></i> +27 67 012 7776 
-                        <i class="fa fa-envelope-o" href="mailto:tours.st@outlook.com" id="i_b45c_1"></i> tours.st@outlook.com
-                    </div>
-                    <div class="traveltour-top-bar-right traveltour-item-pdlr">
-                        <div class="traveltour-top-bar-right-social">
-                            <a href="https://www.instagram.com/YourInstagramPage" target="_blank" class="traveltour-top-bar-social-icon" title="instagram">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@sl_tours?_t=ZM-8u756lBn3rD&_r=1" target="_blank" class="traveltour-top-bar-social-icon" title="tiktok">
-                                <i class="fa fa-tiktok"></i>
-                            </a>
-                            <a href="https://www.google.com/YourGooglePage" target="_blank" class="traveltour-top-bar-social-icon" title="google">
-                                <i class="fa fa-google"></i>
-                            </a>
+
+                        <div class="traveltour-top-bar-left traveltour-item-pdlr">
+                            <i class="fa fa-phone" id="i_b45c_0" href="tel:+27 67 012 7776"></i> +27 67 012 7776
+                            <i class="fa fa-envelope-o" href="mailto:tours.st@outlook.com" id="i_b45c_1"></i> tours.st@outlook.com
                         </div>
-                    </div>
+                        <div class="traveltour-top-bar-right traveltour-item-pdlr">
+                            <div class="traveltour-top-bar-right-social">
+                                <a href="https://www.instagram.com/YourInstagramPage" target="_blank" class="traveltour-top-bar-social-icon" title="instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@sl_tours?_t=ZM-8u756lBn3rD&_r=1" target="_blank" class="traveltour-top-bar-social-icon" title="tiktok">
+                                    <i class="fa fa-tiktok"></i>
+                                </a>
+                                <a href="https://www.google.com/YourGooglePage" target="_blank" class="traveltour-top-bar-social-icon" title="google">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <header class="traveltour-header-wrap traveltour-header-style-plain  traveltour-style-menu-right traveltour-sticky-navigation traveltour-style-slide">
@@ -172,25 +233,39 @@
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-revolution-slider-item gdlr-core-item-pdlr gdlr-core-item-pdb " id="div_eeca_2">
                                         <link href="https://fonts.googleapis.com/css?family=Roboto:900%2C700" rel="stylesheet" property="stylesheet" type="text/css" media="all">
-                                        <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" >
+                                        <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery">
                                             <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.8">
                                                 <ul>
-                                                    <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/slider-1-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""> <img src="upload/slider-1.jpg" alt="" title="slider-1" width="1800" height="844" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                        <div class="tp-caption   tp-resizeme" id="slide-1-layer-1" data-x="89" data-y="center" data-voffset="10" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":450,"ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 81px; font-weight: 600; color: rgba(255,255,255,1);font-family:Poppins;">Exceptional</div>
-                                                        <div class="tp-caption   tp-resizeme" id="slide-1-layer-2" data-x="90" data-y="center" data-voffset="92" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":690,"ease":"Power3.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 45px; font-weight: 600; color: rgba(186,217,255,1);font-family:Poppins;">Holiday in Cape Town</div>
-                                                        <div class="tp-caption   tp-resizeme" id="slide-1-layer-3" data-x="92" data-y="center" data-voffset="138" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','on','off']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":880,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 18px; font-weight: 400; color: rgba(218,229,255,1);font-family:Poppins;">With SL Tours where we offer excellent oppotunities to explore South Africa</div>
-                                                        <div href="our_tours.html" class="tp-caption rev-btn  tp-resizeme" id="slide-1-layer-4" data-x="94" data-y="center" data-voffset="200" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":1060,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(70,123,231,1);"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[20,20,20,20]" data-paddingright="[32,32,32,32]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[32,32,32,32]" style="z-index: 8; white-space: nowrap; font-size: 13px; line-height: 12px; font-weight: 900; color: rgba(255,255,255,1);font-family:Roboto;text-transform:uppercase;background-color:rgb(8, 32, 111);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Learn More</div>
+                                                    <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/slider-1-100x50.jpg" data-rotate="0" data-saveperformance="off"
+                                                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""> <img src="upload/slider-1.jpg" alt="" title="slider-1" width="1800" height="844" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                        <div class="tp-caption   tp-resizeme" id="slide-1-layer-1" data-x="89" data-y="center" data-voffset="10" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":450,"ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 81px; font-weight: 600; color: rgba(255,255,255,1);font-family:Poppins;">Exceptional</div>
+                                                        <div class="tp-caption   tp-resizeme" id="slide-1-layer-2" data-x="90" data-y="center" data-voffset="92" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":690,"ease":"Power3.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 45px; font-weight: 600; color: rgba(186,217,255,1);font-family:Poppins;">Holiday in Cape Town</div>
+                                                        <div class="tp-caption   tp-resizeme" id="slide-1-layer-3" data-x="92" data-y="center" data-voffset="138" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','on','off']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":880,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 18px; font-weight: 400; color: rgba(218,229,255,1);font-family:Poppins;">With SL Tours where we offer excellent oppotunities to explore South Africa</div>
+                                                        <div href="our_tours.html" class="tp-caption rev-btn  tp-resizeme" id="slide-1-layer-4" data-x="94" data-y="center" data-voffset="200" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":1060,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(70,123,231,1);"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[20,20,20,20]" data-paddingright="[32,32,32,32]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[32,32,32,32]" style="z-index: 8; white-space: nowrap; font-size: 13px; line-height: 12px; font-weight: 900; color: rgba(255,255,255,1);font-family:Roboto;text-transform:uppercase;background-color:rgb(8, 32, 111);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Learn More</div>
                                                     </li>
-                                                    <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/slider-2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""> <img src="upload/slider-3.png" alt="" title="slider-2" width="1800" height="844" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-2" data-x="89" data-y="center" data-voffset="-17" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 37px; font-weight: 500; color: rgb(49, 71, 99);font-family:Poppins;">Get your free entrance fee and </div>
-                                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-1" data-x="89" data-y="center" data-voffset="62" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":780,"ease":"Power3.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 90px; font-weight: 700; color: rgba(49,71,99);font-family:Poppins;text-transform:uppercase;">Lunch</div>
-                                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-3" data-x="89" data-y="center" data-voffset="137" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','on','off']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":1010,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 18px; font-weight: 400; color: rgb(71, 96, 154);font-family:Poppins;">For Cape Town City tours </div>
-                                                        <div class="tp-caption rev-btn  tp-resizeme" id="slide-2-layer-4" data-x="89" data-y="center" data-voffset="203" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":1160,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(70,123,231,1);"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[20,20,20,20]" data-paddingright="[32,32,32,32]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[32,32,32,32]" style="z-index: 12; white-space: nowrap; font-size: 13px; line-height: 12px; font-weight: 900; color: rgba(255,255,255,1);font-family:Roboto;text-transform:uppercase;background-color:rgb(8, 32, 111);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Learn More</div>
+                                                    <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/slider-2-100x50.jpg" data-rotate="0" data-saveperformance="off"
+                                                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""> <img src="upload/slider-3.png" alt="" title="slider-2" width="1800" height="844" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-2" data-x="89" data-y="center" data-voffset="-17" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 37px; font-weight: 500; color: rgb(49, 71, 99);font-family:Poppins;">Get your free entrance fee and </div>
+                                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-1" data-x="89" data-y="center" data-voffset="62" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":780,"ease":"Power3.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 90px; font-weight: 700; color: rgba(49,71,99);font-family:Poppins;text-transform:uppercase;">Lunch</div>
+                                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-3" data-x="89" data-y="center" data-voffset="137" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','on','off']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":1010,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 18px; font-weight: 400; color: rgb(71, 96, 154);font-family:Poppins;">For Cape Town City tours </div>
+                                                        <div class="tp-caption rev-btn  tp-resizeme" id="slide-2-layer-4" data-x="89" data-y="center" data-voffset="203" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":1160,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(70,123,231,1);"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[20,20,20,20]" data-paddingright="[32,32,32,32]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[32,32,32,32]" style="z-index: 12; white-space: nowrap; font-size: 13px; line-height: 12px; font-weight: 900; color: rgba(255,255,255,1);font-family:Roboto;text-transform:uppercase;background-color:rgb(8, 32, 111);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Learn More</div>
                                                     </li>
-                                                    <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/slider-3-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""> <img src="upload/slider-2.png" alt="" title="slider-3" width="1800" height="844" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-2" data-x="89" data-y="center" data-voffset="-13" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 37px; font-weight: 400; color: rgba(255,255,255,1);font-family:Poppins;text-transform:uppercase;letter-spacing:2px;">Claim your Free Wine testing</div>
-                                                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-1" data-x="89" data-y="center" data-voffset="66" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;","speed":1500,"to":"o:1;","delay":780,"ease":"Power3.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14; white-space: nowrap; font-size: 73px; font-weight: 700; color: rgba(255,255,255,1);font-family:Poppins;">with our Winelands Tours</div>
-                                                        <div class="tp-caption rev-btn  tp-resizeme" id="slide-3-layer-4" data-x="89" data-y="center" data-voffset="158" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":1030,"ease":"Power2.easeInOut"},{"delay":"wait","speed":170,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(70,123,231,1);"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[20,20,20,20]" data-paddingright="[32,32,32,32]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[32,32,32,32]" style="z-index: 15; white-space: nowrap; font-size: 13px; line-height: 12px; font-weight: 700; color: rgba(48,30,30,1);font-family:Roboto;text-transform:uppercase;background-color:rgba(255,255,255,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:1px;cursor:pointer;">Learn More</div>
+                                                    <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/slider-3-100x50.jpg" data-rotate="0" data-saveperformance="off"
+                                                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""> <img src="upload/slider-2.png" alt="" title="slider-3" width="1800" height="844" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-2" data-x="89" data-y="center" data-voffset="-13" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 37px; font-weight: 400; color: rgba(255,255,255,1);font-family:Poppins;text-transform:uppercase;letter-spacing:2px;">Claim your Free Wine testing</div>
+                                                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-1" data-x="89" data-y="center" data-voffset="66" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;","speed":1500,"to":"o:1;","delay":780,"ease":"Power3.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14; white-space: nowrap; font-size: 73px; font-weight: 700; color: rgba(255,255,255,1);font-family:Poppins;">with our Winelands Tours</div>
+                                                        <div class="tp-caption rev-btn  tp-resizeme" id="slide-3-layer-4" data-x="89" data-y="center" data-voffset="158" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":1030,"ease":"Power2.easeInOut"},{"delay":"wait","speed":170,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(70,123,231,1);"}]'
+                                                            data-textAlign="['left','left','left','left']" data-paddingtop="[20,20,20,20]" data-paddingright="[32,32,32,32]" data-paddingbottom="[20,20,20,20]" data-paddingleft="[32,32,32,32]" style="z-index: 15; white-space: nowrap; font-size: 13px; line-height: 12px; font-weight: 700; color: rgba(48,30,30,1);font-family:Roboto;text-transform:uppercase;background-color:rgba(255,255,255,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:1px;cursor:pointer;">Learn More</div>
                                                     </li>
                                                 </ul>
 
@@ -202,7 +277,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                    <div class="gdlr-core-pbf-wrapper " id="div_29f0_0" data-skin="Blue Column Service">
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " id="div_29f0_0" data-skin="Blue Column Service">
                         <div class="gdlr-core-pbf-background-wrap">
                             <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" id="div_29f0_1" data-parallax-speed="0"></div>
                         </div>
@@ -215,9 +291,9 @@
                         <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                             <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                                 <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"  id="gdlr-core-title-item-id-88464">
+                                    <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" id="gdlr-core-title-item-id-88464">
                                         <div class="gdlr-core-title-item-title-wrap">
-                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" id="h3_29f0_0">Popular Tour Packages<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3><a href="our_tours.html" target="_self" class="gdlr-core-title-item-link"><span class="gdlr-core-separator" >/</span>View All Tours</a></div>
+                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" id="h3_29f0_0">Popular Tour Packages<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3><a href="our_tours.html" target="_self" class="gdlr-core-title-item-link"><span class="gdlr-core-separator" >/</span>View All Tours</a></div>
                                     </div>
                                 </div>
                                 <div class="gdlr-core-pbf-element">
@@ -232,8 +308,8 @@
                                                                 <div class="tourmaster-thumbnail-ribbon-cornor" id="div_29f0_20"></div>Included: Entrance fee & Lunch.</div>
                                                         </div>
                                                         <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#" >Cape Point Tour</a></h3>
-                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R1,750</span><span  class="tourmaster-head">Per person</span></span>
+                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#">Cape Point Tour</a></h3>
+                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R1,750</span><span class="tourmaster-head">Per person</span></span>
                                                             </div>
                                                             <div class="tourmaster-tour-info-wrap clearfix">
                                                                 <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>Full Day Tour</div>
@@ -249,15 +325,16 @@
                                                                 <div class="tourmaster-thumbnail-ribbon-cornor" id="div_29f0_20"></div>Included entrance fee & Lunch.</div>
                                                         </div>
                                                         <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#" >City tour</a></h3>
+                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#">City tour</a></h3>
                                                             <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R700</span><span class="tourmaster-head">per person</span></span>
                                                             </div>
                                                             <div class="tourmaster-tour-info-wrap clearfix">
                                                                 <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>Half Day</div>
-                                                            </div>                                                        </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </li>
-                                               
+
                                                 <li class="gdlr-core-item-mglr">
                                                     <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
                                                         <div class="tourmaster-tour-thumbnail tourmaster-media-image">
@@ -266,11 +343,12 @@
                                                                 <div class="tourmaster-thumbnail-ribbon-cornor" id="div_29f0_20"></div>Free 2 wine farms tasting</div>
                                                         </div>
                                                         <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#" >Winelands  &#8211; Wine Tasting</a></h3>
-                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R1,600</span><span  class="tourmaster-head">Per person</span></span></div>
-                                                                <div class="tourmaster-tour-info-wrap clearfix">
+                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#">Winelands  &#8211; Wine Tasting</a></h3>
+                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R1,600</span><span class="tourmaster-head">Per person</span></span>
+                                                            </div>
+                                                            <div class="tourmaster-tour-info-wrap clearfix">
                                                                 <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>3 farms a day</div>
-                                                            </div>                                                        
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -282,9 +360,10 @@
                                                                 <div class="tourmaster-thumbnail-ribbon-cornor" id="div_29f0_22"></div>Pick up and drop</div>
                                                         </div>
                                                         <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#" >Township tour</a></h3>
-                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R700</span><span  class="tourmaster-head">Per person</span></span></div>
-                                                                <div class="tourmaster-tour-info-wrap clearfix">
+                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#">Township tour</a></h3>
+                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R700</span><span class="tourmaster-head">Per person</span></span>
+                                                            </div>
+                                                            <div class="tourmaster-tour-info-wrap clearfix">
                                                                 <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>Half Day</div>
                                                             </div>
                                                         </div>
@@ -296,11 +375,11 @@
                                                             <a href="our_tours.html"><img src="upload/Gardenroute.jpg" alt="" width="700" height="450" /></a>
                                                             <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element" id="div_29f0_21">
                                                                 <div class="tourmaster-thumbnail-ribbon-cornor" id="div_29f0_22"></div>Extras are optionally.</div>
-                                                            
+
                                                         </div>
                                                         <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#" >Garden Route Tour</a></h3>
-                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R6,500</span><span  class="tourmaster-head">Per person</span></span>
+                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#">Garden Route Tour</a></h3>
+                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R6,500</span><span class="tourmaster-head">Per person</span></span>
                                                             </div>
                                                             <div class="tourmaster-tour-info-wrap clearfix">
                                                                 <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>3 Days</div>
@@ -314,11 +393,11 @@
                                                             <a href="our_tours.html"><img src="upload/AirPort.jpg" alt="" width="700" height="450" /></a>
                                                             <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element" id="div_29f0_21">
                                                                 <div class="tourmaster-thumbnail-ribbon-cornor" id="div_29f0_22"></div>Extras are optionally.</div>
-                                                            
+
                                                         </div>
                                                         <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#" >Airport transfer</a></h3>
-                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R700</span><span  class="tourmaster-head">Per trip</span></span>
+                                                            <h3 class="tourmaster-tour-title gdlr-core-skin-title"><a href="#">Airport transfer</a></h3>
+                                                            <div class="tourmaster-tour-price-wrap "><span class="tourmaster-tour-price"><span class="tourmaster-tail">R700</span><span class="tourmaster-head">Per trip</span></span>
                                                             </div>
                                                             <div class="tourmaster-tour-info-wrap clearfix">
                                                                 <div class="tourmaster-tour-info tourmaster-tour-info-duration-text "><i class="icon_clock_alt"></i>trip</div>
@@ -339,7 +418,10 @@
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" id="div_29f0_26">
                                         <div class="gdlr-core-title-item-title-wrap">
-                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" id="h3_29f0_1"><span class="gdlr-core-title-item-left-icon" id="span_29f0_0"  ><i class="icon_pin_alt" id="i_29f0_0"  ></i></span>Popular Destinations<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3><a href="our_tours.html" target="_self" class="gdlr-core-title-item-link"><span class="gdlr-core-separator" >/</span>View All Tours</a></div>
+                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" id="h3_29f0_1"><span class="gdlr-core-title-item-left-icon" id="span_29f0_0"><i class="icon_pin_alt" id="i_29f0_0"  ></i></span>Popular Destinations<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+                                            <a
+                                                href="our_tours.html" target="_self" class="gdlr-core-title-item-link"><span class="gdlr-core-separator">/</span>View All Tours</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="gdlr-core-pbf-column gdlr-core-column-45 gdlr-core-column-first">
@@ -361,198 +443,9 @@
                         <div class="gdlr-core-pbf-background-wrap">
                             <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" id="div_b937_33" data-parallax-speed="0"></div>
                         </div>
-                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
-                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container-custom" id="div_b937_34">
-                                <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-testimonial-item gdlr-core-item-pdb clearfix  gdlr-core-testimonial-style-center gdlr-core-item-pdlr">
-                                        <div class="gdlr-core-flexslider flexslider gdlr-core-js-2 gdlr-core-nav-style-middle-large" data-type="carousel" data-column="1" data-nav="bullet" data-vcenter-nav="1">
-                                            <div class="gdlr-core-block-item-title-wrap  gdlr-core-center-align gdlr-core-item-mglr">
-                                                <div class="gdlr-core-block-item-title-inner">
-                                                    <h3 class="gdlr-core-block-item-title" id="h3_b937_21"><i class="fa fa-comments-o"  ></i>Customer Reviews</h3></div>
-                                                <div class="gdlr-core-flexslider-nav gdlr-core-rectangle-style gdlr-core-absolute-center gdlr-core-right"></div>
-                                            </div>
-                                            <ul class="slides">
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >I had such a great time with the services. My driver Liso was the best! He was so patient and helpful in any way. My fiancé was the one who referred Liso to me when she came to Capetown in October. So now, December, I see why she referred me to him. He is great. I will definitely tell all my friends about this</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Martina Stoiljkovic</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >I had such a great time with the services. My driver, Liso, was the best! He was so patient and helpful in every way. My fiancé referred Liso to me when she came to Cape Town in October. Now, in December, I see why she referred me to him. He is great. I will definitely tell all my friends about this.</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Joshua Jack</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >What a great guy! Great service! Always on time! I always refer friends and family to Liso as he is one of a kind! Keep up the great work, Liso!</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Joshua Jack</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >I have had nothing but the most pleasant experience being driven by SL Tours. It is both safe and hospitable, and engaging. It has truly been a pleasant experience, and I thoroughly recommend it.</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Roxy Carmichael</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >My colleagues and I had a day off in Cape Town and decided to go on a tour. This wonderful tour guide, Liso, was recommended by our colleagues, so we decided to give him a call. We travel a lot, and believe me when I say we have never experienced something like this before. The passion he has for his work and his country is beyond admirable! He took the time to tell us everything about the sights on our way to our destination. He knows so much, and it's all so interesting! He took the most beautiful routes, and when we told him we wanted to take pictures, he stopped at the most breathtaking spots. All of them took my breath away and left me in tears. He goes above and beyond to make sure you have a great day, and you can feel his sincerity. What a guy! If you have any doubts, don't! Call him! Lots of love from The Netherlands.</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Martina Stoiljkovic</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >My wife and I booked a 2-day tour in and around Cape Town with Liso from SL Tours. He is a well-educated guide who has a lot of knowledge and is very passionate about South Africa. He is very friendly, always on time, and reliable! We also liked that Liso has a good sense of when to give information and when to let you enjoy the surroundings, maintaining a good balance. This was very nice, allowing us some 'me time' moments together. I would definitely recommend booking a trip with Liso, who will ensure you have a great and safe tour! Keep up the good job 😊</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">django soes</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >"I think 5 stars are not enough for the team at SL Tours. They are very professional, knowledgeable, respectful, and trustworthy. I was surprised I misplaced my laptop at Cape Town airport, and they tracked it, found it, and returned it to me without any questions or problems. Guys, God bless you all.</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Dr. Thomas Morgan</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >Great guy. Friendly and helpful. He took us from CT airport to Franschhoek and back a few days later. I would definitely recommend Liso’s services for a short trip or a tour in the CT area.</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Angela M</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_35">
-                                                                <p >My colleague's and I had a day off in Cape Town and decided to go on a tour. This wonderful tourguid, Liso, was recommended by our colleagues so we decided to give him a call.We travel a lot, believe me when I say we have never experienced something like this before. The passion he has for his work and his country is beyond admirable! He took the time to tell us everything about the sightings on our way to our destination. He knows so much and believe me it's all so interesting! He took the most beautiful routs and when we told him we wanted to take pictures, he stopped at most breathtaking spots. All of them took my breath away and left me in tears.He goes beyond to make sure you have a great day, you just feel his sincerity. What a guy!If you doubt, don't! Call him!</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Martina Stoiljkovic</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_36">
-                                                                <p>I had the opportunity to explore Cape Town with SL Tours. Booking my tour with SL Tours was serendipity because my original plan fell through. SL Tours accommodated me immediately, even though it was a last-minute request, and within two hours, I was on my way.
-
-                                                                    I had the best experience. I couldn't have asked for a better (personalized) way to explore Cape Town.
-                                                                    
-                                                                    Thank you for your hospitality and for showing me your beautiful country. This was a 5-star experience, and I highly recommend anyone who wants to explore Cape Town to book with SL Tours.
-                                                                    
-                                                                    Thank you for an enriching experience.</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Sofiat Akinola</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" id="div_b937_37">
-                                                                <p>My and my wife booked a 2 days tour in and around cape town with Liso from SL Tours. He is a well educated guide who has a lot of knowledge and is very pasionate about South africa. He is very friendly and always on time and reliable!
-                                                                    We also liked that Liso has a good feeling of when to give information and when to let you enjoy the suroundings and has a good balance in this.
-                                                                    This was very nice to have some me time moments with my wife.
-                                                                    I would defenitly recommend you to book a trip with Liso who will make sure you have a great and safe tour!
-                                                                    Keep up the good job 😀</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">                                                                
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title">Diego Soes</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption"><span class="gdlr-core-rating"><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i><i class="fa fa-star" ></i></span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+                        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                        <div class="elfsight-app-a7526722-da34-4ca8-bb16-bb263f4611d4" data-elfsight-app-lazy></div>
                         <div class="gdlr-core-pbf-wrapper" id="div_b937_38">
                             <div class="gdlr-core-pbf-background-wrap"></div>
                             <div class="gdlr-core-pbf-wrapper-content gdlr-core-js">
@@ -586,7 +479,8 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" id="div_29f0_49">
                                                     <div class="gdlr-core-title-item-title-wrap">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" id="h3_29f0_10">Why Book With Us?<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" id="h3_29f0_10">Why Book With Us?<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -600,7 +494,8 @@
                                                     <div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="upload/icon-10.png" alt="" width="37" height="39" /></div>
                                                     <div class="gdlr-core-column-service-content-wrapper">
                                                         <div class="gdlr-core-column-service-title-wrap" id="div_29f0_52">
-                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title">Our guides are knowledgeable and friendly</h3></div>
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title">Our guides are knowledgeable and friendly</h3>
+                                                        </div>
                                                         <div class="gdlr-core-column-service-content" id="div_29f0_53">
                                                             <p></p>
                                                         </div>
@@ -618,7 +513,8 @@
                                                     <div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="upload/icon-11.png" alt="" width="34" height="43" /></div>
                                                     <div class="gdlr-core-column-service-content-wrapper">
                                                         <div class="gdlr-core-column-service-title-wrap" id="div_29f0_56">
-                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title">We have clean and safe Vehicles </h3></div>
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title">We have clean and safe Vehicles </h3>
+                                                        </div>
                                                         <div class="gdlr-core-column-service-content" id="div_29f0_57">
                                                         </div>
                                                     </div>
@@ -635,7 +531,8 @@
                                                     <div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="upload/icon-12.png" alt="" width="27" height="37" /></div>
                                                     <div class="gdlr-core-column-service-content-wrapper">
                                                         <div class="gdlr-core-column-service-title-wrap" id="div_29f0_60">
-                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title">We are reliable and always on time</h3></div>
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title">We are reliable and always on time</h3>
+                                                        </div>
                                                         <div class="gdlr-core-column-service-content" id="div_29f0_61">
                                                         </div>
                                                     </div>
@@ -654,7 +551,7 @@
                     <div class="traveltour-footer-container traveltour-container clearfix">
                         <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-20">
                             <div id="text-1" class="widget widget_text traveltour-widget">
-                                <div class="textwidget"><img src="images/logo.png" alt="" /> <span class="gdlr-core-space-shortcode" id="span_29f0_13"></span> SL Tours offers excellent opportunities to explore South Africa. <span class="gdlr-core-space-shortcode" id="span_29f0_14"></span> <img src="upload/award-2.svg" alt="" width="140" id="img_29f0_0" /> <img src="upload/award-1.png" alt="" width="65" /></div>
+                                <div class="textwidget"><img src="images/logo.png" alt="" /> <span class="gdlr-core-space-shortcode" id="span_29f0_13"></span> SL Tours offers excellent opportunities to explore South Africa. <span class="gdlr-core-space-shortcode" id="span_29f0_14"></span>                                    <img src="upload/award-2.svg" alt="" width="140" id="img_29f0_0" /> <img src="upload/award-1.png" alt="" width="65" /></div>
                             </div>
                         </div>
                         <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-20">
@@ -674,13 +571,13 @@
                             <div id="text-2" class="widget widget_text traveltour-widget">
                                 <h3 class="traveltour-widget-title"><span class="traveltour-widget-head-text">Contact Info</span></h3><span class="clear"></span>
                                 <div class="textwidget">
-                                    <p>Address : 23970 Racaza Street,  Cape Town
+                                    <p>Address : 23970 Racaza Street, Cape Town
                                         <br /> <span class="gdlr-core-space-shortcode" style="margin-top: -13px ;"></span>
                                         <br /> Phone : +27 67 012 7776
                                         <br /> <span class="gdlr-core-space-shortcode" style="margin-top: -13px ;"></span>
                                         <br /> Email : tours.st@outlook.com</p>
                                     <p><span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
-                                        <br /> 
+                                        <br />
                                         <!-- Updated Social Media Icons -->
                                         <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fab fa-facebook" style="font-size: 18px; color: #ffffff; margin-right: 20px;"></i></a>
                                         <a href="https://www.instagram.com/YourInstagramPage" target="_blank"><i class="fab fa-instagram" style="font-size: 18px; color: #ffffff; margin-right: 20px;"></i></a>
@@ -703,7 +600,7 @@
     <a href="https://wa.me/27670127776" target="_blank" class="traveltour-footer-back-to-top-button" id="traveltour-footer-back-to-top-button">
         <i class="fa fa-whatsapp"></i>
     </a>
-    
+
     <script type='text/javascript' src='js/jquery/jquery.js'></script>
     <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
     <script type='text/javascript' src='js/jquery/ui/core.min.js'></script>
@@ -723,9 +620,9 @@
     <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
     <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
     <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>  
-    <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script> 
-    <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script> 
+    <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
     <script type="text/javascript">
         /*<![CDATA[*/
         function setREVStartSize(e) {
@@ -908,63 +805,60 @@
             "image": "https://sl-tours.com/images/tour-banner.jpg",
             "description": "SL Tours is a Cape Town-based tour operator offering guided tours and excursions across South Africa, including Cape Point, Winelands, and the Garden Route.",
             "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "23970 Racaza Street",
-              "addressLocality": "Cape Town",
-              "addressRegion": "Western Cape",
-              "postalCode": "8000",
-              "addressCountry": "ZA"
+                "@type": "PostalAddress",
+                "streetAddress": "23970 Racaza Street",
+                "addressLocality": "Cape Town",
+                "addressRegion": "Western Cape",
+                "postalCode": "8000",
+                "addressCountry": "ZA"
             },
             "telephone": "+27 67 012 7776",
             "email": "tours.st@outlook.com",
             "sameAs": [
-              "https://www.facebook.com/SLTours",
-              "https://www.instagram.com/SLTours",
-              "https://twitter.com/SLTours"
+                "https://www.facebook.com/SLTours",
+                "https://www.instagram.com/SLTours",
+                "https://twitter.com/SLTours"
             ],
-            "service": [
-              {
+            "service": [{
                 "@type": "TouristTrip",
                 "name": "Cape Point Tour",
                 "description": "A full-day tour exploring Cape Point, Boulders Beach, and Hout Bay.",
                 "price": "R1750",
                 "priceCurrency": "ZAR",
                 "offers": {
-                  "@type": "Offer",
-                  "price": "1750",
-                  "priceCurrency": "ZAR",
-                  "availability": "https://schema.org/InStock"
+                    "@type": "Offer",
+                    "price": "1750",
+                    "priceCurrency": "ZAR",
+                    "availability": "https://schema.org/InStock"
                 }
-              },
-              {
+            }, {
                 "@type": "TouristTrip",
                 "name": "Winelands Wine Tasting Tour",
                 "description": "A guided tour to three renowned wine farms in Stellenbosch, Franschhoek, and Paarl.",
                 "price": "R1600",
                 "priceCurrency": "ZAR",
                 "offers": {
-                  "@type": "Offer",
-                  "price": "1600",
-                  "priceCurrency": "ZAR",
-                  "availability": "https://schema.org/InStock"
+                    "@type": "Offer",
+                    "price": "1600",
+                    "priceCurrency": "ZAR",
+                    "availability": "https://schema.org/InStock"
                 }
-              },
-              {
+            }, {
                 "@type": "TouristTrip",
                 "name": "Garden Route Tour",
                 "description": "A three-day tour along the scenic Garden Route, visiting Knysna, Plettenberg Bay, and Tsitsikamma National Park.",
                 "price": "R6500",
                 "priceCurrency": "ZAR",
                 "offers": {
-                  "@type": "Offer",
-                  "price": "6500",
-                  "priceCurrency": "ZAR",
-                  "availability": "https://schema.org/InStock"
+                    "@type": "Offer",
+                    "price": "6500",
+                    "priceCurrency": "ZAR",
+                    "availability": "https://schema.org/InStock"
                 }
-              }
-            ]
-          }          
-        </script>
+            }]
+        }
+    </script>
 
 </body>
+
 </html>
