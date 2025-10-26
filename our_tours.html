@@ -13,12 +13,74 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
     <link rel="icon" href="images/l.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script nonce="84a158de-7f77-47a8-9f18-5359bd63bec1">(function (w, d) { !function (bg, bh, bi, bj) { bg[bi] = bg[bi] || {}; bg[bi].executed = []; bg.zaraz = { deferred: [], listeners: [] }; bg.zaraz.q = []; bg.zaraz._f = function (bk) { return function () { var bl = Array.prototype.slice.call(arguments); bg.zaraz.q.push({ m: bk, a: bl }) } }; for (const bm of ["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm); bg.zaraz.init = () => { var bn = bh.getElementsByTagName(bj)[0], bo = bh.createElement(bj), bp = bh.getElementsByTagName("title")[0]; bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text); bg[bi].x = Math.random(); bg[bi].w = bg.screen.width; bg[bi].h = bg.screen.height; bg[bi].j = bg.innerHeight; bg[bi].e = bg.innerWidth; bg[bi].l = bg.location.href; bg[bi].r = bh.referrer; bg[bi].k = bg.screen.colorDepth; bg[bi].n = bh.characterSet; bg[bi].o = (new Date).getTimezoneOffset(); if (bg.dataLayer) for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({ ...bu[1], ...bv[1] })), {}))) zaraz.set(bt[0], bt[1], { scope: "page" }); bg[bi].q = []; for (; bg.zaraz.q.length;) { const bw = bg.zaraz.q.shift(); bg[bi].q.push(bw) } bo.defer = !0; for (const bx of [localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => { try { bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by)) } catch{ bg[bi]["z_" + by.slice(7)] = bx.getItem(by) } })); bo.referrerPolicy = "origin"; bo.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi]))); bn.parentNode.insertBefore(bo, bn) };["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
-    
+    <script nonce="84a158de-7f77-47a8-9f18-5359bd63bec1">
+        (function(w, d) {
+            ! function(bg, bh, bi, bj) {
+                bg[bi] = bg[bi] || {};
+                bg[bi].executed = [];
+                bg.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                bg.zaraz.q = [];
+                bg.zaraz._f = function(bk) {
+                    return function() {
+                        var bl = Array.prototype.slice.call(arguments);
+                        bg.zaraz.q.push({
+                            m: bk,
+                            a: bl
+                        })
+                    }
+                };
+                for (const bm of["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm);
+                bg.zaraz.init = () => {
+                    var bn = bh.getElementsByTagName(bj)[0],
+                        bo = bh.createElement(bj),
+                        bp = bh.getElementsByTagName("title")[0];
+                    bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text);
+                    bg[bi].x = Math.random();
+                    bg[bi].w = bg.screen.width;
+                    bg[bi].h = bg.screen.height;
+                    bg[bi].j = bg.innerHeight;
+                    bg[bi].e = bg.innerWidth;
+                    bg[bi].l = bg.location.href;
+                    bg[bi].r = bh.referrer;
+                    bg[bi].k = bg.screen.colorDepth;
+                    bg[bi].n = bh.characterSet;
+                    bg[bi].o = (new Date).getTimezoneOffset();
+                    if (bg.dataLayer)
+                        for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({...bu[1],
+                                ...bv[1]
+                            })), {}))) zaraz.set(bt[0], bt[1], {
+                            scope: "page"
+                        });
+                    bg[bi].q = [];
+                    for (; bg.zaraz.q.length;) {
+                        const bw = bg.zaraz.q.shift();
+                        bg[bi].q.push(bw)
+                    }
+                    bo.defer = !0;
+                    for (const bx of[localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => {
+                        try {
+                            bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by))
+                        } catch {
+                            bg[bi]["z_" + by.slice(7)] = bx.getItem(by)
+                        }
+                    }));
+                    bo.referrerPolicy = "origin";
+                    bo.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi])));
+                    bn.parentNode.insertBefore(bo, bn)
+                };
+                ["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+
     <title>SL Tour</title>
 
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic%2Cgreek-ext%2Cgreek&amp;ver=4.9.8' type='text/css' media='all' />
-   
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic%2Cgreek-ext%2Cgreek&amp;ver=4.9.8'
+        type='text/css' media='all' />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel='stylesheet' href='plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' />
@@ -36,10 +98,10 @@
     <div class="traveltour-mobile-header-wrap">
         <div class="traveltour-top-bar">
             <div class="traveltour-top-bar-background"></div>
-            
+
             <div class="traveltour-top-bar-container clearfix traveltour-container ">
                 <div class="traveltour-top-bar-left traveltour-item-pdlr travel-tour-hide-on-mobile">
-                    <i class="fa fa-phone" id="i_b45c_0" href="tel:+27 67 012 7776"></i> +27 67 012 7776 
+                    <i class="fa fa-phone" id="i_b45c_0" href="tel:+27 67 012 7776"></i> +27 67 012 7776
                     <i class="fa fa-envelope-o" href="mailto:tours.st@outlook.com" id="i_b45c_1"></i> tours.st@outlook.com
                 </div>
                 <div class="traveltour-top-bar-right traveltour-item-pdlr">
@@ -101,23 +163,23 @@
                 <div class="traveltour-top-bar">
                     <div class="traveltour-top-bar-background"></div>
                     <div class="traveltour-top-bar-container clearfix traveltour-container ">
-                        
-                    <div class="traveltour-top-bar-left traveltour-item-pdlr">
-                        <i class="fa fa-phone" id="i_bc98_2"></i> +27 67 012 7776 
-                        <i class="fa fa-envelope-o" id="i_bc98_3"></i> tours.st@outlook.com
-                    </div>
-                    <div class="traveltour-top-bar-right traveltour-item-pdlr">
-                        <div class="traveltour-top-bar-right-social">
-                            <a href="https://www.instagram.com/YourInstagramPage" target="_blank" class="traveltour-top-bar-social-icon" title="instagram">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@sl_tours?_t=ZM-8u756lBn3rD&_r=1" target="_blank" class="traveltour-top-bar-social-icon" title="tiktok">
-                                <i class="fa fa-tiktok"></i>
-                            </a>
-                            <a href="https://www.google.com/YourGooglePage" target="_blank" class="traveltour-top-bar-social-icon" title="google">
-                                <i class="fa fa-google"></i>
-                            </a>
+
+                        <div class="traveltour-top-bar-left traveltour-item-pdlr">
+                            <i class="fa fa-phone" id="i_bc98_2"></i> +27 67 012 7776
+                            <i class="fa fa-envelope-o" id="i_bc98_3"></i> tours.st@outlook.com
                         </div>
+                        <div class="traveltour-top-bar-right traveltour-item-pdlr">
+                            <div class="traveltour-top-bar-right-social">
+                                <a href="https://www.instagram.com/YourInstagramPage" target="_blank" class="traveltour-top-bar-social-icon" title="instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@sl_tours?_t=ZM-8u756lBn3rD&_r=1" target="_blank" class="traveltour-top-bar-social-icon" title="tiktok">
+                                    <i class="fa fa-tiktok"></i>
+                                </a>
+                                <a href="https://www.google.com/YourGooglePage" target="_blank" class="traveltour-top-bar-social-icon" title="google">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
@@ -172,7 +234,8 @@
                 <div class="traveltour-page-title-overlay"></div>
                 <div class="traveltour-page-title-container traveltour-container">
                     <div class="traveltour-page-title-content traveltour-item-pdlr">
-                        <h1 class="traveltour-page-title">Explore more of our Tours</h1></div>
+                        <h1 class="traveltour-page-title">Explore more of our Tours</h1>
+                    </div>
                 </div>
             </div>
             <div class="traveltour-page-wrapper" id="traveltour-page-wrapper">
@@ -201,8 +264,8 @@
                                                         <!-- Price Details -->
                                                         <div class="tourmaster-tour-price-wrap">
                                                             <span class="tourmaster-tour-price">
-                                                                <span class="tourmaster-tail">R1,750</span>
-                                                                <span class="tourmaster-head">per person</span>
+                                                                <span class="tourmaster-tail">R2000</span>
+                                                            <span class="tourmaster-head">per person</span>
                                                             </span>
                                                         </div>
                                                         <!-- Tour Info -->
@@ -231,23 +294,20 @@
                                                                 </ul>
                                                             </div>
                                                             <!-- Included Features -->
-                                                            <div class="tourmaster-thumbnail-ribbon-corner" 
-                                                            id="div_bc98_1" 
-                                                            style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
-                                                           <strong>For more information and online booking</strong>
-                                                       </div>
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" id="div_bc98_1" style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
+                                                                <strong>For more information and online booking</strong>
+                                                            </div>
                                                         </div>
                                                         <!-- Book Us Now Button -->
                                                         <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
-                                                            <a href="https://secure.activitybridge.com/book?activityid=18497" 
-                                                               style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18497" style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
                                                                 Click here
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
                                                 <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title" href="https://secure.activitybridge.com/book?activityid=18498">
                                                     <!-- Tour Image -->
@@ -266,7 +326,7 @@
                                                         <div class="tourmaster-tour-price-wrap">
                                                             <span class="tourmaster-tour-price">
                                                                 <span class="tourmaster-tail">R1,500</span>
-                                                                <span class="tourmaster-head">per person</span>
+                                                            <span class="tourmaster-head">per person</span>
                                                             </span>
                                                         </div>
                                                         <!-- Tour Info -->
@@ -285,22 +345,19 @@
                                                                 </ul>
                                                             </div>
                                                             <!-- Included Features -->
-                                                            <div class="tourmaster-thumbnail-ribbon-corner" 
-                                                            id="div_bc98_1" 
-                                                            style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
-                                                           <strong>For more information and online booking</strong>
-                                                       </div>
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" id="div_bc98_1" style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
+                                                                <strong>For more information and online booking</strong>
+                                                            </div>
                                                         </div>
                                                         <!-- Book Us Now Button -->
                                                         <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
-                                                            <a href="https://secure.activitybridge.com/book?activityid=18498" 
-                                                               style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18498" style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
                                                                 Click here
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>                                           
+                                            </div>
                                             <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30 tourmaster-column-first">
                                                 <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
                                                     <!-- Tour Image -->
@@ -319,7 +376,7 @@
                                                         <div class="tourmaster-tour-price-wrap">
                                                             <span class="tourmaster-tour-price">
                                                                 <span class="tourmaster-tail">R6,500</span>
-                                                                <span class="tourmaster-head">per person</span>
+                                                            <span class="tourmaster-head">per person</span>
                                                             </span>
                                                         </div>
                                                         <!-- Tour Info -->
@@ -343,23 +400,20 @@
                                                                 </ul>
                                                             </div>
                                                             <!-- Included Features -->
-                                                            <div class="tourmaster-thumbnail-ribbon-corner" 
-                                                            id="div_bc98_1" 
-                                                            style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
-                                                           <strong>For more information and online booking</strong>
-                                                       </div>
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" id="div_bc98_1" style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
+                                                                <strong>For more information and online booking</strong>
+                                                            </div>
                                                         </div>
                                                         <!-- Book Us Now Button -->
                                                         <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
-                                                            <a href="https://secure.activitybridge.com/book?activityid=18499" 
-                                                               style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18499" style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
                                                                 Click here
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
                                                 <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
                                                     <!-- Tour Image -->
@@ -378,7 +432,7 @@
                                                         <div class="tourmaster-tour-price-wrap">
                                                             <span class="tourmaster-tour-price">
                                                                 <span class="tourmaster-tail">R700</span>
-                                                                <span class="tourmaster-head">per person</span>
+                                                            <span class="tourmaster-head">per person</span>
                                                             </span>
                                                         </div>
                                                         <!-- Tour Info -->
@@ -402,242 +456,230 @@
                                                                 </ul>
                                                             </div>
                                                             <!-- Included Features -->
-                                                            <div class="tourmaster-thumbnail-ribbon-corner" 
-                                                            id="div_bc98_1" 
-                                                            style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
-                                                           <strong>For more information and online booking</strong>
-                                                       </div>
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" id="div_bc98_1" style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
+                                                                <strong>For more information and online booking</strong>
+                                                            </div>
                                                         </div>
                                                         <!-- Book Us Now Button -->
                                                         <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
-                                                            <a href="https://secure.activitybridge.com/book?activityid=18500" 
-                                                               style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18500" style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
                                                                 Click here
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
-                                         <!-- Township Tours -->
-                                         <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30 tourmaster-column-first">
-                                            <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                <!-- Tour Image -->
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                    <a href="https://secure.activitybridge.com/book?activityid=18501">
-                                                        <img src="upload/township.png" alt="Township Tours - Langa and Khayelitsha" width="700" height="430" />
-                                                    </a>
-                                                </div>
-                                                <!-- Tour Content -->
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                    <!-- Tour Title -->
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
-                                                        <a href="https://secure.activitybridge.com/book?activityid=18501">Township Tours</a>
-                                                    </h3>
-                                                    <!-- Price Details -->
-                                                    <div class="tourmaster-tour-price-wrap">
-                                                        <span class="tourmaster-tour-price">
+
+                                            <!-- Township Tours -->
+                                            <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30 tourmaster-column-first">
+                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                    <!-- Tour Image -->
+                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                        <a href="https://secure.activitybridge.com/book?activityid=18501">
+                                                            <img src="upload/township.png" alt="Township Tours - Langa and Khayelitsha" width="700" height="430" />
+                                                        </a>
+                                                    </div>
+                                                    <!-- Tour Content -->
+                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                        <!-- Tour Title -->
+                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18501">Township Tours</a>
+                                                        </h3>
+                                                        <!-- Price Details -->
+                                                        <div class="tourmaster-tour-price-wrap">
+                                                            <span class="tourmaster-tour-price">
                                                             <span class="tourmaster-tail">R700</span>
                                                             <span class="tourmaster-head">per person</span>
-                                                        </span>
-                                                    </div>
-                                                    <!-- Tour Info -->
-                                                    <div class="tourmaster-tour-info-wrap clearfix">
-                                                        <!-- Duration -->
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
-                                                            <i class="icon_clock_alt"></i> 2-hour Tour
+                                                            </span>
                                                         </div>
-                                                        <!-- Minimum Guests -->
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
-                                                            <i class="fas fa-users"></i> Minimum Guests: 4
-                                                        </div>
-                                                        <!-- Options -->
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
-                                                            <i class="fas fa-cogs"></i> Options:
-                                                            <ul>
-                                                                <li>Langa</li>
-                                                                <li>Khayelitsha</li>
-                                                            </ul>
-                                                        </div>
-                                                        <!-- Included Features -->
-                                                        <div class="tourmaster-thumbnail-ribbon-corner" 
-                                                            id="div_bc98_1" 
-                                                            style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
-                                                           <strong>For more information and online booking</strong>
-                                                       </div>
+                                                        <!-- Tour Info -->
+                                                        <div class="tourmaster-tour-info-wrap clearfix">
+                                                            <!-- Duration -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="icon_clock_alt"></i> 2-hour Tour
+                                                            </div>
+                                                            <!-- Minimum Guests -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="fas fa-users"></i> Minimum Guests: 4
+                                                            </div>
+                                                            <!-- Options -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                                <i class="fas fa-cogs"></i> Options:
+                                                                <ul>
+                                                                    <li>Langa</li>
+                                                                    <li>Khayelitsha</li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- Included Features -->
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" id="div_bc98_1" style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
+                                                                <strong>For more information and online booking</strong>
+                                                            </div>
                                                         </div>
                                                         <!-- Book Us Now Button -->
                                                         <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
-                                                            <a href="https://secure.activitybridge.com/book?activityid=18501" 
-                                                               style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18501" style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
                                                                 Click here
                                                             </a>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Winelands Tour -->
-                                        <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
-                                            <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                <!-- Tour Image -->
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                    <a href="https://secure.activitybridge.com/book?activityid=18502">
-                                                        <img src="upload/Winelands-Tour.jpg" alt="Winelands Tour - Stellenbosch and Franschhoek" width="700" height="430" />
-                                                    </a>
-                                                </div>
-                                                <!-- Tour Content -->
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                    <!-- Tour Title -->
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
-                                                        <a href="https://secure.activitybridge.com/book?activityid=18502">Winelands Tour</a>
-                                                    </h3>
-                                                    <!-- Price Details -->
-                                                    <div class="tourmaster-tour-price-wrap">
-                                                        <span class="tourmaster-tour-price">
+                                            <!-- Winelands Tour -->
+                                            <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
+                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                    <!-- Tour Image -->
+                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                        <a href="https://secure.activitybridge.com/book?activityid=18502">
+                                                            <img src="upload/Winelands-Tour.jpg" alt="Winelands Tour - Stellenbosch and Franschhoek" width="700" height="430" />
+                                                        </a>
+                                                    </div>
+                                                    <!-- Tour Content -->
+                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                        <!-- Tour Title -->
+                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18502">Winelands Tour</a>
+                                                        </h3>
+                                                        <!-- Price Details -->
+                                                        <div class="tourmaster-tour-price-wrap">
+                                                            <span class="tourmaster-tour-price">
                                                             <span class="tourmaster-tail">R1,600</span>
                                                             <span class="tourmaster-head">per person</span>
-                                                        </span>
-                                                    </div>
-                                                    <!-- Tour Info -->
-                                                    <div class="tourmaster-tour-info-wrap clearfix">
-                                                        <!-- Duration -->
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
-                                                            <i class="icon_clock_alt"></i> Full Day Tour
+                                                            </span>
                                                         </div>
-                                                        <!-- Minimum Guests -->
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
-                                                            <i class="fas fa-users"></i> Minimum Guests: 4
-                                                        </div>
-                                                        <!-- Locations -->
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
-                                                            <i class="fa fa-map-marker"></i> Locations: 
-                                                            <ul>
-                                                                <li>Stellenbosch</li>
-                                                                <li>Franschhoek</li>
-                                                            </ul>
-                                                        </div>
-                                                        <!-- Included Features -->
-                                                        <div class="tourmaster-thumbnail-ribbon-corner" 
-                                                            id="div_bc98_1" 
-                                                            style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
-                                                           <strong>For more information and online booking</strong>
-                                                       </div>
+                                                        <!-- Tour Info -->
+                                                        <div class="tourmaster-tour-info-wrap clearfix">
+                                                            <!-- Duration -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="icon_clock_alt"></i> Full Day Tour
+                                                            </div>
+                                                            <!-- Minimum Guests -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="fas fa-users"></i> Minimum Guests: 4
+                                                            </div>
+                                                            <!-- Locations -->
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                                <i class="fa fa-map-marker"></i> Locations:
+                                                                <ul>
+                                                                    <li>Stellenbosch</li>
+                                                                    <li>Franschhoek</li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- Included Features -->
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" id="div_bc98_1" style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
+                                                                <strong>For more information and online booking</strong>
+                                                            </div>
                                                         </div>
                                                         <!-- Book Us Now Button -->
                                                         <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
-                                                            <a href="https://secure.activitybridge.com/book?activityid=18502" 
-                                                               style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18502" style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
                                                                 Click here
                                                             </a>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- West Coast Tour -->
-                                        <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
-                                            <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                    <a href="https://secure.activitybridge.com/book?activityid=18503">
-                                                        <img src="upload/West-Coast.jpg" alt="West Coast Tour - Visit Nature Reserves and Scenic Views" width="700" height="430" />
-                                                    </a>
-                                                </div>
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
-                                                        <a href="https://secure.activitybridge.com/book?activityid=18503">West Coast</a>
-                                                    </h3>
-                                                    <div class="tourmaster-tour-price-wrap">
-                                                        <span class="tourmaster-tour-price">
+                                            <!-- West Coast Tour -->
+                                            <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
+                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                        <a href="https://secure.activitybridge.com/book?activityid=18503">
+                                                            <img src="upload/West-Coast.jpg" alt="West Coast Tour - Visit Nature Reserves and Scenic Views" width="700" height="430" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18503">West Coast</a>
+                                                        </h3>
+                                                        <div class="tourmaster-tour-price-wrap">
+                                                            <span class="tourmaster-tour-price">
                                                             <span class="tourmaster-tail">R1,700</span>
                                                             <span class="tourmaster-head">per person</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="tourmaster-tour-info-wrap clearfix">
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
-                                                            <i class="icon_clock_alt"></i> Full Day Tour
+                                                            </span>
                                                         </div>
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
-                                                            <i class="fas fa-users"></i> Minimum Guests: 4
-                                                        </div>
-                                                        <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
-                                                            <i class="fa fa-map-marker"></i> Locations:
-                                                            <ul>
-                                                                <li>West Coast Tour</li>
-                                                                <li>Khwa Ttu Nature Reserve</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="tourmaster-thumbnail-ribbon-corner" 
-                                                            id="div_bc98_1" 
-                                                            style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
-                                                           <strong>For more information and online booking</strong>
-                                                       </div>
+                                                        <div class="tourmaster-tour-info-wrap clearfix">
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="icon_clock_alt"></i> Full Day Tour
+                                                            </div>
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                <i class="fas fa-users"></i> Minimum Guests: 4
+                                                            </div>
+                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                                <i class="fa fa-map-marker"></i> Locations:
+                                                                <ul>
+                                                                    <li>West Coast Tour</li>
+                                                                    <li>Khwa Ttu Nature Reserve</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="tourmaster-thumbnail-ribbon-corner" id="div_bc98_1" style="background-color: #ff7b00; text-align: center; color: #ffffff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 10px; border-radius: 5px;">
+                                                                <strong>For more information and online booking</strong>
+                                                            </div>
                                                         </div>
                                                         <!-- Book Us Now Button -->
                                                         <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
-                                                            <a href="https://secure.activitybridge.com/book?activityid=18503" 
-                                                               style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
+                                                            <a href="https://secure.activitybridge.com/book?activityid=18503" style="background-color: #ff7b00; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
                                                                 Click here
                                                             </a>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="traveltour-page-wrapper" id="traveltour-page-wrapper">
-                                            <div class="gdlr-core-page-builder-body">
-                                                <div class="gdlr-core-pbf-wrapper ">
-                                                    <div class="gdlr-core-pbf-background-wrap" id="div_bc98_0"></div>
-                                                    <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
-                                                        <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
-                                                            <div class="gdlr-core-pbf-element">
-                                                                <div class="tourmaster-tour-item clearfix  tourmaster-tour-item-style-grid tourmaster-tour-item-column-2">
-                                                                    <div class="tourmaster-tour-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-                                                                        <!-- Other tour items go here -->
-                                        
-                                                                        <!-- Private Tours Section -->
-                                                                        <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
-                                                                            <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
-                                                                                <!-- Tour Image -->
-                                                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image">
-                                                                                    <a>
-                                                                                        <img src="upload/private.png" alt="Private Tours - Customized Experiences" width="700" height="430" />
-                                                                                    </a>
-                                                                                </div>
-                                                                                <!-- Tour Content -->
-                                                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
-                                                                                    <!-- Tour Title -->
-                                                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
-                                                                                        <a>Private Tours</a>
-                                                                                    </h3>
-                                                                                    <!-- Price Details -->
-                                                                                    <div class="tourmaster-tour-price-wrap">
-                                                                                        <span class="tourmaster-tour-price">
+                                            <div class="traveltour-page-wrapper" id="traveltour-page-wrapper">
+                                                <div class="gdlr-core-page-builder-body">
+                                                    <div class="gdlr-core-pbf-wrapper ">
+                                                        <div class="gdlr-core-pbf-background-wrap" id="div_bc98_0"></div>
+                                                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                                                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                                                <div class="gdlr-core-pbf-element">
+                                                                    <div class="tourmaster-tour-item clearfix  tourmaster-tour-item-style-grid tourmaster-tour-item-column-2">
+                                                                        <div class="tourmaster-tour-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
+                                                                            <!-- Other tour items go here -->
+
+                                                                            <!-- Private Tours Section -->
+                                                                            <div class="gdlr-core-item-list tourmaster-item-pdlr tourmaster-column-30">
+                                                                                <div class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-price-right-title">
+                                                                                    <!-- Tour Image -->
+                                                                                    <div class="tourmaster-tour-thumbnail tourmaster-media-image">
+                                                                                        <a>
+                                                                                            <img src="upload/private.png" alt="Private Tours - Customized Experiences" width="700" height="430" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <!-- Tour Content -->
+                                                                                    <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background">
+                                                                                        <!-- Tour Title -->
+                                                                                        <h3 class="tourmaster-tour-title gdlr-core-skin-title" id="h3_bc98_0">
+                                                                                            <a>Private Tours</a>
+                                                                                        </h3>
+                                                                                        <!-- Price Details -->
+                                                                                        <div class="tourmaster-tour-price-wrap">
+                                                                                            <span class="tourmaster-tour-price">
                                                                                             <span class="tourmaster-tail">Rate</span>
                                                                                             <span class="tourmaster-head">Rate on Request</span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                    <!-- Tour Info -->
-                                                                                    <div class="tourmaster-tour-info-wrap clearfix">
-                                                                                        <!-- Duration -->
-                                                                                        <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
-                                                                                            <i class="icon_clock_alt"></i> Flexible Duration
+                                                                                            </span>
                                                                                         </div>
-                                                                                        <!-- Highlights -->
-                                                                                        <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
-                                                                                            <strong>Why Choose Our Private Tours?</strong>
-                                                                                            <ul>
-                                                                                                <li><strong>Tailor-Made Experiences</strong> Enjoy exclusive, personalized tours designed for individuals and families.</li>
-                                                                                                <li><strong>Custom Itinerary Options</strong> Plan your own adventure or select from our expertly crafted SL Tours.</li>
-                                                                                                <li><strong>Comfort & Expertise</strong> Travel in an air-conditioned vehicle with a certified, professional tourist guide.</li>
-                                                                                                <li><strong>No Delays, No Crowds</strong> Experience seamless travel without waiting for other guests.</li>
-                                                                                            </ul>
+                                                                                        <!-- Tour Info -->
+                                                                                        <div class="tourmaster-tour-info-wrap clearfix">
+                                                                                            <!-- Duration -->
+                                                                                            <div class="tourmaster-tour-info tourmaster-tour-info-duration-text">
+                                                                                                <i class="icon_clock_alt"></i> Flexible Duration
+                                                                                            </div>
+                                                                                            <!-- Highlights -->
+                                                                                            <div class="tourmaster-tour-info tourmaster-tour-info-departure-location">
+                                                                                                <strong>Why Choose Our Private Tours?</strong>
+                                                                                                <ul>
+                                                                                                    <li><strong>Tailor-Made Experiences</strong> Enjoy exclusive, personalized tours designed for individuals and families.</li>
+                                                                                                    <li><strong>Custom Itinerary Options</strong> Plan your own adventure or select from our expertly crafted SL Tours.</li>
+                                                                                                    <li><strong>Comfort & Expertise</strong> Travel in an air-conditioned vehicle with a certified, professional tourist guide.</li>
+                                                                                                    <li><strong>No Delays, No Crowds</strong> Experience seamless travel without waiting for other guests.</li>
+                                                                                                </ul>
+                                                                                            </div>
                                                                                         </div>
-                                                                                    </div>
-                                                                                    <!-- Request Rates Button -->
-                                                                                    <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
-                                                                                        <button onclick="openPopup()" 
-                                                                                                style="background-color: #ff7b00; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; border: none; cursor: pointer;">
+                                                                                        <!-- Request Rates Button -->
+                                                                                        <div class="tourmaster-book-now-button" style="text-align: center; margin-top: 20px;">
+                                                                                            <button onclick="openPopup()" style="background-color: #ff7b00; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; border: none; cursor: pointer;">
                                                                                             Request Rates
                                                                                         </button>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -649,157 +691,161 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
-                                        <!-- Pop-Up Form for Booking -->
-                                        <div id="private-tour-popup" class="popup-form-overlay">
-                                            <div class="popup-form-content">
-                                                <span class="close-popup" onclick="closePopup()">&times;</span>
-                                                <h3>Book Your Private Tour</h3>
-                                                <div role="form" class="wpcf7" id="wpcf7-f1319-p1964-o1" lang="en-US" dir="ltr">
-                                                    <form class="quform" id="emailForm" onsubmit="sendEmail(event)">
-                                                        <div class="quform-elements">
-                                                            <div class="quform-element">
-                                                                <p>
-                                                                    <br>
-                                                                    <span class="wpcf7-form-control-wrap your-name">
+
+                                            <!-- Pop-Up Form for Booking -->
+                                            <div id="private-tour-popup" class="popup-form-overlay">
+                                                <div class="popup-form-content">
+                                                    <span class="close-popup" onclick="closePopup()">&times;</span>
+                                                    <h3>Book Your Private Tour</h3>
+                                                    <div role="form" class="wpcf7" id="wpcf7-f1319-p1964-o1" lang="en-US" dir="ltr">
+                                                        <form class="quform" id="emailForm" onsubmit="sendEmail(event)">
+                                                            <div class="quform-elements">
+                                                                <div class="quform-element">
+                                                                    <p>
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
                                                                         <input type="text" id="name" name="name" placeholder="Your Name and Surname..." required>
-                                                                    </span> 
-                                                                </p>
-                                                            </div>
-                                                            <div class="quform-element">
-                                                                <p>
-                                                                    <br>
-                                                                    <span class="wpcf7-form-control-wrap your-email">
+                                                                    </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="quform-element">
+                                                                    <p>
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
                                                                         <input type="email" id="email" name="email" placeholder="Your email address..." required>
-                                                                    </span> 
-                                                                </p>
-                                                            </div>
-                                                            <div class="quform-element">
-                                                                <p>
-                                                                    <br>
-                                                                    <span class="wpcf7-form-control-wrap your-phone">
+                                                                    </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="quform-element">
+                                                                    <p>
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-phone">
                                                                         <input type="tel" id="phone" name="phone" placeholder="Your phone number..." required>
-                                                                    </span> 
-                                                                </p>
-                                                            </div>
-                                                            <div class="quform-element">
-                                                                <p>
-                                                                    <br>
-                                                                    <span class="wpcf7-form-control-wrap your-message">
+                                                                    </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="quform-element">
+                                                                    <p>
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
                                                                         <textarea id="message" name="message" placeholder="Your message..." rows="5"></textarea>
                                                                     </span>
+                                                                    </p>
+                                                                </div>
+                                                                <p>
+                                                                    <!-- Begin Submit button -->
+                                                                    <div class="quform-submi">
+                                                                        <div class="quform-submi-inner">
+                                                                            <button type="submit" class="submit-button"><span>Submit Now</span></button>
+                                                                        </div>
+                                                                    </div>
                                                                 </p>
                                                             </div>
-                                                            <p>
-                                                                <!-- Begin Submit button -->
-                                                                <div class="quform-submi">
-                                                                    <div class="quform-submi-inner">
-                                                                        <button type="submit" class="submit-button"><span>Submit Now</span></button>
-                                                                    </div>
-                                                                </div>
-                                                            </p>
-                                                        </div>
-                                                    </form>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
-                                        <!-- JavaScript for Popup Functionality -->
-                                        <script>
-                                            // Function to open the popup
-                                            function openPopup() {
-                                                document.getElementById("private-tour-popup").style.display = "block";
-                                            }
-                                        
-                                            // Function to close the popup
-                                            function closePopup() {
-                                                document.getElementById("private-tour-popup").style.display = "none";
-                                            }
-                                        
-                                            // Close the popup if the user clicks outside of it
-                                            window.onclick = function(event) {
-                                                const popup = document.getElementById("private-tour-popup");
-                                                if (event.target === popup) {
-                                                    popup.style.display = "none";
+
+                                            <!-- JavaScript for Popup Functionality -->
+                                            <script>
+                                                // Function to open the popup
+                                                function openPopup() {
+                                                    document.getElementById("private-tour-popup").style.display = "block";
                                                 }
-                                            };
-                                        
-                                            // Function to handle form submission
-                                            function sendEmail(event) {
-                                                event.preventDefault(); // Prevent the form from submitting the default way
-                                                // Add your form submission logic here (e.g., send data to a server)
-                                                alert("Form submitted successfully!");
-                                                closePopup(); // Close the popup after submission
-                                            }
-                                        </script>
-                                        
-                                        <!-- CSS for Popup Styling -->
-                                        <style>
-                                            /* Popup Overlay */
-                                            .popup-form-overlay {
-                                                display: none; /* Hidden by default */
-                                                position: fixed;
-                                                top: 0;
-                                                left: 0;
-                                                width: 100%;
-                                                height: 100%;
-                                                background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-                                                z-index: 1000; /* Ensure it's on top of other elements */
-                                            }
-                                        
-                                            /* Popup Content */
-                                            .popup-form-content {
-                                                position: relative;
-                                                background-color: #fff;
-                                                margin: 10% auto; /* Center the popup */
-                                                padding: 20px;
-                                                width: 80%;
-                                                max-width: 500px;
-                                                border-radius: 10px;
-                                                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-                                            }
-                                        
-                                            /* Close Button */
-                                            .close-popup {
-                                                position: absolute;
-                                                top: 10px;
-                                                right: 15px;
-                                                font-size: 24px;
-                                                font-weight: bold;
-                                                cursor: pointer;
-                                                color: #333;
-                                            }
-                                        
-                                            .close-popup:hover {
-                                                color: #000;
-                                            }
-                                        
-                                            /* Form Styling */
-                                            .quform input,
-                                            .quform textarea {
-                                                width: 100%;
-                                                padding: 10px;
-                                                margin-bottom: 15px;
-                                                border: 1px solid #ccc;
-                                                border-radius: 5px;
-                                            }
-                                        
-                                            .quform .submit-button {
-                                                background-color: #ff7b00;
-                                                color: #fff;
-                                                padding: 10px 20px;
-                                                border: none;
-                                                border-radius: 5px;
-                                                cursor: pointer;
-                                                font-size: 16px;
-                                            }
-                                        
-                                            .quform .submit-button:hover {
-                                                background-color: #e56a00;
-                                            }
-                                        </style>
-                                        <!-- Pop-Up Form for Booking -->
+
+                                                // Function to close the popup
+                                                function closePopup() {
+                                                    document.getElementById("private-tour-popup").style.display = "none";
+                                                }
+
+                                                // Close the popup if the user clicks outside of it
+                                                window.onclick = function(event) {
+                                                    const popup = document.getElementById("private-tour-popup");
+                                                    if (event.target === popup) {
+                                                        popup.style.display = "none";
+                                                    }
+                                                };
+
+                                                // Function to handle form submission
+                                                function sendEmail(event) {
+                                                    event.preventDefault(); // Prevent the form from submitting the default way
+                                                    // Add your form submission logic here (e.g., send data to a server)
+                                                    alert("Form submitted successfully!");
+                                                    closePopup(); // Close the popup after submission
+                                                }
+                                            </script>
+
+                                            <!-- CSS for Popup Styling -->
+                                            <style>
+                                                /* Popup Overlay */
+                                                
+                                                .popup-form-overlay {
+                                                    display: none;
+                                                    /* Hidden by default */
+                                                    position: fixed;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    background-color: rgba(0, 0, 0, 0.7);
+                                                    /* Semi-transparent black background */
+                                                    z-index: 1000;
+                                                    /* Ensure it's on top of other elements */
+                                                }
+                                                /* Popup Content */
+                                                
+                                                .popup-form-content {
+                                                    position: relative;
+                                                    background-color: #fff;
+                                                    margin: 10% auto;
+                                                    /* Center the popup */
+                                                    padding: 20px;
+                                                    width: 80%;
+                                                    max-width: 500px;
+                                                    border-radius: 10px;
+                                                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                                                }
+                                                /* Close Button */
+                                                
+                                                .close-popup {
+                                                    position: absolute;
+                                                    top: 10px;
+                                                    right: 15px;
+                                                    font-size: 24px;
+                                                    font-weight: bold;
+                                                    cursor: pointer;
+                                                    color: #333;
+                                                }
+                                                
+                                                .close-popup:hover {
+                                                    color: #000;
+                                                }
+                                                /* Form Styling */
+                                                
+                                                .quform input,
+                                                .quform textarea {
+                                                    width: 100%;
+                                                    padding: 10px;
+                                                    margin-bottom: 15px;
+                                                    border: 1px solid #ccc;
+                                                    border-radius: 5px;
+                                                }
+                                                
+                                                .quform .submit-button {
+                                                    background-color: #ff7b00;
+                                                    color: #fff;
+                                                    padding: 10px 20px;
+                                                    border: none;
+                                                    border-radius: 5px;
+                                                    cursor: pointer;
+                                                    font-size: 16px;
+                                                }
+                                                
+                                                .quform .submit-button:hover {
+                                                    background-color: #e56a00;
+                                                }
+                                            </style>
+                                            <!-- Pop-Up Form for Booking -->
 
                                         </div>
                                     </div>
@@ -816,7 +862,7 @@
                     <div class="traveltour-footer-container traveltour-container clearfix">
                         <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-20">
                             <div id="text-1" class="widget widget_text traveltour-widget">
-                                <div class="textwidget"><img src="images/logo.png" alt="" /> <span class="gdlr-core-space-shortcode" id="span_29f0_13"></span> SL Tours offers excellent opportunities to explore South Africa. <span class="gdlr-core-space-shortcode" id="span_29f0_14"></span> <img src="upload/award-2.svg" alt="" width="140" id="img_29f0_0" /> <img src="upload/award-1.png" alt="" width="65" /></div>
+                                <div class="textwidget"><img src="images/logo.png" alt="" /> <span class="gdlr-core-space-shortcode" id="span_29f0_13"></span> SL Tours offers excellent opportunities to explore South Africa. <span class="gdlr-core-space-shortcode" id="span_29f0_14"></span>                                    <img src="upload/award-2.svg" alt="" width="140" id="img_29f0_0" /> <img src="upload/award-1.png" alt="" width="65" /></div>
                             </div>
                         </div>
                         <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-20">
@@ -836,13 +882,13 @@
                             <div id="text-2" class="widget widget_text traveltour-widget">
                                 <h3 class="traveltour-widget-title"><span class="traveltour-widget-head-text">Contact Info</span></h3><span class="clear"></span>
                                 <div class="textwidget">
-                                    <p>Address : 23970 Racaza Street,  Cape Town
+                                    <p>Address : 23970 Racaza Street, Cape Town
                                         <br /> <span class="gdlr-core-space-shortcode" style="margin-top: -13px ;"></span>
                                         <br /> Phone : +27 67 012 7776
                                         <br /> <span class="gdlr-core-space-shortcode" style="margin-top: -13px ;"></span>
                                         <br /> Email : tours.st@outlook.com</p>
                                     <p><span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
-                                        <br /> 
+                                        <br />
                                         <!-- Updated Social Media Icons -->
                                         <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fab fa-facebook" style="font-size: 18px; color: #ffffff; margin-right: 20px;"></i></a>
                                         <a href="https://www.instagram.com/YourInstagramPage" target="_blank"><i class="fab fa-instagram" style="font-size: 18px; color: #ffffff; margin-right: 20px;"></i></a>
@@ -863,34 +909,35 @@
         </div>
         <a href="https://wa.me/27670127776" target="_blank" class="traveltour-footer-back-to-top-button" id="traveltour-footer-back-to-top-button">
             <i class="fa fa-whatsapp"></i>
-    <script type='text/javascript' src='js/jquery/jquery.js'></script>
-    <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
-    <script type='text/javascript' src='js/jquery/ui/core.min.js'></script>
-    <script type='text/javascript' src='js/jquery/ui/datepicker.min.js'></script>
-    <script type='text/javascript' src='js/jquery/ui/effect.min.js'></script>
-    <script type='text/javascript' src='plugins/tourmaster/tourmaster.js'></script>
-    <script type='text/javascript' src='js/plugins.js'></script>
-    <script type='text/javascript' src='plugins/goodlayers-core/plugins/combine/script.js'></script>
+            <script type='text/javascript' src='js/jquery/jquery.js'></script>
+            <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+            <script type='text/javascript' src='js/jquery/ui/core.min.js'></script>
+            <script type='text/javascript' src='js/jquery/ui/datepicker.min.js'></script>
+            <script type='text/javascript' src='js/jquery/ui/effect.min.js'></script>
+            <script type='text/javascript' src='plugins/tourmaster/tourmaster.js'></script>
+            <script type='text/javascript' src='js/plugins.js'></script>
+            <script type='text/javascript' src='plugins/goodlayers-core/plugins/combine/script.js'></script>
 
-    <script type='text/javascript' src='plugins/goodlayers-core/include/js/page-builder.js'></script>
-    <script>
-        // Open Pop-Up Form
-        document.querySelector('.book-now-button').addEventListener('click', function() {
-            document.getElementById('private-tour-popup').style.display = 'flex';
-        });
-    
-        // Close Pop-Up Form
-        document.querySelector('.close-popup').addEventListener('click', function() {
-            document.getElementById('private-tour-popup').style.display = 'none';
-        });
-    
-        // Close Pop-Up Form When Clicking Outside
-        window.addEventListener('click', function(event) {
-            if (event.target === document.getElementById('private-tour-popup')) {
-                document.getElementById('private-tour-popup').style.display = 'none';
-            }
-        });
-    </script>
+            <script type='text/javascript' src='plugins/goodlayers-core/include/js/page-builder.js'></script>
+            <script>
+                // Open Pop-Up Form
+                document.querySelector('.book-now-button').addEventListener('click', function() {
+                    document.getElementById('private-tour-popup').style.display = 'flex';
+                });
+
+                // Close Pop-Up Form
+                document.querySelector('.close-popup').addEventListener('click', function() {
+                    document.getElementById('private-tour-popup').style.display = 'none';
+                });
+
+                // Close Pop-Up Form When Clicking Outside
+                window.addEventListener('click', function(event) {
+                    if (event.target === document.getElementById('private-tour-popup')) {
+                        document.getElementById('private-tour-popup').style.display = 'none';
+                    }
+                });
+            </script>
 
 </body>
+
 </html>
