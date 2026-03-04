@@ -1,0 +1,667 @@
+:root {
+  --sl-brand-orange: #d05c04;
+  --sl-brand-orange-dark: #b34f03;
+  --sl-brand-blue: #0b4fca;
+  --sl-brand-blue-dark: #083f9f;
+  --sl-brand-navy: #0a134e;
+}
+
+/* Unified button scheme site-wide */
+a.gdlr-core-button,
+.traveltour-body .traveltour-button,
+.traveltour-body input[type="button"],
+.traveltour-body input[type="submit"],
+.tourmaster-book-now-button a,
+.tourmaster-book-now-button button,
+.submit-button,
+.quform .submit-button,
+.rate-button,
+.sl-confidence-whatsapp,
+.sl-confidence-book,
+.sl-confidence-review {
+  background-color: var(--sl-brand-orange) !important;
+  border: 1px solid var(--sl-brand-orange) !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+a.gdlr-core-button,
+.traveltour-body .traveltour-button,
+.tourmaster-book-now-button a,
+.tourmaster-book-now-button button,
+.rate-button,
+.sl-confidence-whatsapp,
+.sl-confidence-book,
+.sl-confidence-review {
+  min-height: 44px;
+  padding: 10px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.gdlr-core-button:hover,
+.traveltour-body .traveltour-button:hover,
+.traveltour-body input[type="button"]:hover,
+.traveltour-body input[type="submit"]:hover,
+.tourmaster-book-now-button a:hover,
+.tourmaster-book-now-button button:hover,
+.submit-button:hover,
+.quform .submit-button:hover,
+.rate-button:hover,
+.sl-confidence-whatsapp:hover,
+.sl-confidence-book:hover {
+  background-color: var(--sl-brand-orange-dark) !important;
+  border-color: var(--sl-brand-orange-dark) !important;
+  color: #ffffff !important;
+}
+
+.sl-confidence-review,
+.rate-button:last-child {
+  background-color: var(--sl-brand-blue) !important;
+  border-color: var(--sl-brand-blue) !important;
+  color: #ffffff !important;
+}
+
+.sl-confidence-review:hover,
+.rate-button:last-child:hover {
+  background-color: var(--sl-brand-blue-dark) !important;
+  border-color: var(--sl-brand-blue-dark) !important;
+  color: #ffffff !important;
+}
+
+/* Keep visual identity, improve readability and interaction quality */
+.traveltour-page-title,
+.gdlr-core-title-item-title,
+.tourmaster-tour-title {
+  line-height: 1.25;
+}
+
+.traveltour-top-bar a,
+.textwidget a,
+.gdlr-core-social-network-icon,
+.tourmaster-tour-title a,
+.tourmaster-book-now-button a {
+  text-underline-offset: 2px;
+}
+
+.tourmaster-book-now-button a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keep orange CTA labels white across all states */
+.tourmaster-book-now-button a,
+.tourmaster-book-now-button a:hover,
+.tourmaster-book-now-button a:focus,
+.tourmaster-book-now-button a:active,
+.tourmaster-book-now-button a:visited,
+.tourmaster-book-now-button button,
+.tourmaster-book-now-button button:hover,
+.tourmaster-book-now-button button:focus,
+.tourmaster-book-now-button button:active,
+.sl-confidence-whatsapp,
+.sl-confidence-whatsapp:hover,
+.sl-confidence-whatsapp:focus,
+.sl-confidence-whatsapp:active,
+.sl-confidence-whatsapp:visited,
+.sl-confidence-book,
+.sl-confidence-book:hover,
+.sl-confidence-book:focus,
+.sl-confidence-book:active,
+.sl-confidence-book:visited,
+.sl-confidence-review,
+.sl-confidence-review:hover,
+.sl-confidence-review:focus,
+.sl-confidence-review:active,
+.sl-confidence-review:visited,
+.submit-button,
+.submit-button:hover {
+  color: #ffffff !important;
+}
+
+/* Accessible keyboard focus without changing color system */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--sl-brand-orange);
+  outline-offset: 2px;
+}
+
+/* Prevent long tour bullet rows from feeling cramped */
+.tourmaster-tour-info-wrap ul {
+  margin-top: 8px;
+}
+
+/* Improve tap spacing in top contact strip */
+.traveltour-top-bar-left a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* Home page tour cards: minimal summary with strong included ribbon + clear CTA */
+#div_29f0_18 .sl-home-included-ribbon {
+  background-color: var(--sl-brand-orange) !important;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+#div_29f0_18 .sl-home-included-ribbon .tourmaster-thumbnail-ribbon-cornor {
+  border-top-color: var(--sl-brand-orange-dark) !important;
+}
+
+#div_29f0_18 .sl-home-tour-more {
+  margin-top: 12px;
+  text-align: left;
+}
+
+#div_29f0_18 .sl-home-tour-more a {
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+#div_29f0_18 .tourmaster-tour-info-wrap {
+  margin-bottom: 8px;
+}
+
+/* Conversion-focused trust presentation for tour cards */
+.sl-tour-proof-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 30px 28px;
+}
+
+.sl-tour-proof-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(10, 19, 78, 0.12);
+  background: #eef4ff;
+  color: #1f2a4e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  box-shadow: 0 8px 18px rgba(10, 19, 78, 0.08);
+}
+
+.sl-tour-proof-item i {
+  color: var(--sl-brand-orange);
+  font-size: 16px;
+}
+
+.sl-tour-tripadvisor {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(11, 79, 202, 0.2);
+  background: rgba(11, 79, 202, 0.08);
+  color: #1f2a4e;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.sl-tour-tripadvisor i {
+  color: var(--sl-brand-blue);
+  margin-right: 6px;
+}
+
+.sl-tour-include-exclude {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sl-tour-detail-block {
+  border-radius: 10px;
+  border: 1px solid rgba(10, 19, 78, 0.14);
+  background: #ffffff;
+  padding: 10px 12px;
+}
+
+.sl-tour-detail-include {
+  border-color: rgba(31, 111, 67, 0.24);
+  background: #f4fbf6;
+}
+
+.sl-tour-detail-exclude {
+  border-color: rgba(208, 92, 4, 0.24);
+  background: #fff7f2;
+}
+
+.sl-tour-detail-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--sl-brand-navy);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sl-tour-detail-title i {
+  font-size: 13px;
+}
+
+.sl-tour-detail-include .sl-tour-detail-title i {
+  color: #1f6f43;
+}
+
+.sl-tour-detail-exclude .sl-tour-detail-title i {
+  color: var(--sl-brand-orange);
+}
+
+.sl-tour-detail-block ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.sl-tour-detail-block li {
+  margin-bottom: 5px;
+  color: #36415f;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.sl-tour-detail-block li:last-child {
+  margin-bottom: 0;
+}
+
+.sl-confidence-panel {
+  margin-top: 16px;
+  padding: 14px 14px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(10, 19, 78, 0.16);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(243, 246, 255, 0.95));
+}
+
+.sl-confidence-panel-compact {
+  margin-top: 12px;
+  padding: 12px;
+}
+
+.sl-confidence-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--sl-brand-navy);
+}
+
+.sl-confidence-title i {
+  margin-right: 7px;
+  color: var(--sl-brand-orange);
+}
+
+.sl-confidence-list {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.sl-confidence-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #36415f;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.sl-confidence-list li i {
+  color: var(--sl-brand-orange);
+  margin-top: 2px;
+}
+
+.sl-confidence-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sl-confidence-whatsapp,
+.sl-confidence-book,
+.sl-confidence-review {
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sl-confidence-whatsapp {
+  background-color: var(--sl-brand-orange);
+  color: #ffffff;
+}
+
+.sl-confidence-whatsapp:hover,
+.sl-confidence-book:hover {
+  background-color: #b34f03;
+  color: #ffffff;
+}
+
+.sl-confidence-book {
+  background-color: var(--sl-brand-orange);
+  color: #ffffff;
+}
+
+.sl-confidence-review {
+  background-color: #0b4fca;
+  color: #ffffff;
+  border: 1px solid #0b4fca;
+}
+
+.sl-confidence-review:hover {
+  border-color: #083f9f;
+  background-color: #083f9f;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  #div_29f0_18 .sl-home-tour-more {
+    text-align: center;
+  }
+
+  #div_29f0_18 .sl-home-tour-more a {
+    width: 100%;
+  }
+
+  .sl-tour-proof-strip {
+    grid-template-columns: 1fr;
+    margin: 0 20px 24px;
+  }
+
+  .sl-tour-include-exclude {
+    gap: 8px;
+  }
+
+  .sl-tour-detail-block {
+    padding: 10px;
+  }
+}
+
+/* About page presentation upgrades */
+.sl-about-intro-bar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px auto 30px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.sl-about-intro-card {
+  border: 1px solid rgba(10, 19, 78, 0.14);
+  border-radius: 12px;
+  background: #f2f6ff;
+  padding: 16px;
+}
+
+.sl-about-intro-card i {
+  color: var(--sl-brand-orange);
+  margin-right: 8px;
+}
+
+.sl-about-intro-title {
+  margin: 0 0 8px;
+  color: var(--sl-brand-navy);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sl-about-intro-text {
+  margin: 0;
+  color: #3f4b67;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sl-about-image-frame img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(10, 19, 78, 0.16);
+  box-shadow: 0 16px 32px rgba(10, 19, 78, 0.16);
+}
+
+.sl-about-side-card {
+  border-radius: 12px;
+  border: 1px solid rgba(10, 19, 78, 0.16);
+  background: #ffffff;
+  box-shadow: 0 14px 28px rgba(10, 19, 78, 0.1);
+  padding: 18px;
+  margin-top: 8px;
+}
+
+.sl-about-side-title {
+  margin: 0 0 10px;
+  color: var(--sl-brand-navy);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sl-about-side-list {
+  margin: 0 0 14px;
+  padding-left: 18px;
+}
+
+.sl-about-side-list li {
+  margin-bottom: 8px;
+  color: #3f4b67;
+  line-height: 1.45;
+}
+
+.sl-about-side-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sl-about-side-actions a {
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sl-about-side-primary {
+  background-color: var(--sl-brand-orange);
+  color: #ffffff !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.sl-about-side-primary:hover {
+  background-color: #b34f03;
+  color: #ffffff !important;
+}
+
+.sl-about-side-secondary {
+  background-color: #0b4fca;
+  color: #ffffff !important;
+  border: 1px solid #0b4fca;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.sl-about-side-secondary:hover {
+  color: #ffffff !important;
+  background-color: #083f9f;
+  border-color: #083f9f;
+}
+
+.sl-about-side-primary:visited,
+.sl-about-side-primary:focus,
+.sl-about-side-primary:active,
+.sl-about-side-secondary:visited,
+.sl-about-side-secondary:focus,
+.sl-about-side-secondary:active {
+  color: #ffffff !important;
+}
+
+.sl-about-main {
+  max-width: 1200px;
+  margin: 14px auto 40px;
+  padding: 0 20px;
+}
+
+.sl-about-section {
+  background: #ffffff;
+  border: 1px solid rgba(10, 19, 78, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 16px 34px rgba(10, 19, 78, 0.08);
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.sl-about-section h2 {
+  margin: 0 0 12px;
+  color: var(--sl-brand-navy);
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.sl-about-section p {
+  margin: 0 0 14px;
+  color: #3f4b67;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.sl-about-story {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.sl-about-story-copy h3 {
+  margin: 0 0 8px;
+  color: var(--sl-brand-navy);
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.sl-about-story-media {
+  display: grid;
+  gap: 16px;
+}
+
+.sl-about-story-media .sl-about-image-frame {
+  margin: 0;
+}
+
+.sl-about-feature-grid {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.sl-about-feature-grid li {
+  border: 1px solid rgba(10, 19, 78, 0.14);
+  border-radius: 10px;
+  background: #f7f9ff;
+  padding: 14px;
+  color: #35405f;
+  line-height: 1.55;
+  font-size: 15px;
+}
+
+.sl-about-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.sl-about-service-card {
+  border: 1px solid rgba(10, 19, 78, 0.14);
+  border-radius: 10px;
+  background: #f9fbff;
+  padding: 16px;
+}
+
+.sl-about-service-card h3 {
+  margin: 0 0 8px;
+  color: var(--sl-brand-navy);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sl-about-service-card p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.sl-about-cta-row {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sl-about-cta-row a {
+  min-height: 44px;
+}
+
+@media (max-width: 900px) {
+  .sl-about-intro-bar {
+    grid-template-columns: 1fr;
+    margin: 14px 20px 24px;
+  }
+
+  .sl-about-image-frame img {
+    max-width: 100%;
+  }
+
+  .sl-about-story,
+  .sl-about-feature-grid,
+  .sl-about-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sl-about-section {
+    padding: 20px;
+  }
+
+  .sl-about-section h2 {
+    font-size: 24px;
+  }
+
+  .sl-about-main {
+    margin: 12px auto 28px;
+    padding: 0 14px;
+  }
+
+  .sl-about-cta-row a {
+    flex: 1 1 100%;
+    width: 100%;
+    justify-content: center;
+  }
+}

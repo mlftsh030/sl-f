@@ -517,7 +517,7 @@ body.admin-bar .traveltour-fixed-navigation.traveltour-style-slide{ margin-top: 
 .traveltour-animate-fixed-navigation.traveltour-header-style-boxed.traveltour-style-splitted-menu .traveltour-navigation .sf-menu > li > a{ padding-top: 0px; }
 
 /* page title */
-.traveltour-page-title-wrap{ background-image: url('../images/page-title-background.png'); 
+.traveltour-page-title-wrap{ background-image: url('../images/page-title-background.jpg'); 
 	background-position: center; background-size: cover; position: relative; }
 .traveltour-page-title-wrap .traveltour-page-title-overlay{ position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; }
 .traveltour-page-title-wrap .traveltour-page-title-container{ position: relative; }
@@ -699,7 +699,7 @@ body.blog .traveltour-single-article{ padding-bottom: 60px; }
 .traveltour-comments-area .form-submit{ text-align: center; padding-top: 14px; }
 
 /* blog title */
-.traveltour-blog-title-wrap{ background-image: url('../images/page-title-background.png'); background-position: center; position: relative; background-size: cover; overflow: hidden; }
+.traveltour-blog-title-wrap{ background-image: url('../images/page-title-background.jpg'); background-position: center; position: relative; background-size: cover; overflow: hidden; }
 .traveltour-blog-title-wrap .traveltour-blog-title-container{ position: relative; }
 .traveltour-blog-title-wrap .traveltour-blog-title-overlay{ position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; }
 .traveltour-blog-title-wrap.traveltour-feature-image .traveltour-blog-title-top-overlay{ position: absolute; top: 0px; right: 0px; left: 0px; height: 450px;
@@ -2746,14 +2746,14 @@ div.nsl-container .nsl-button-google[data-skin="light"] {
 #i_ffaa_1{font-size: 16px ;color: #ffffff ;margin-left: 30px ;margin-right: 10px ;}
 #i_ffaa_2{font-size: 16px ;color: #ffffff ;margin-right: 10px ;}
 #i_ffaa_3{font-size: 16px ;color: #ffffff ;margin-left: 30px ;margin-right: 10px ;}
-#div_ffaa_0{background-image: url(../images/page-title-background.png);}
+#div_ffaa_0{background-image: url(../images/page-title-background.jpg);}
 #span_ffaa_0{margin-top: -20px ;}
 #i_ffaa_4{font-size: 15px ;color: #ffa127 ;margin-right: 13px ;}
 #i_ffaa_5{font-size: 15px ;color: #ffa127 ;margin-right: 10px ;}
 #i_ffaa_6{font-size: 15px ;color: #ffa127 ;margin-right: 10px ;}
 #i_ffaa_7{font-size: 15px ;color: #ffa127 ;margin-right: 10px ;}
 #span_ffaa_1{margin-top: -10px ;}
-#div_ffaa_1{color: #c9e2ff ;background-image: url(../images/page-title-background.png) ;}
+#div_ffaa_1{color: #c9e2ff ;background-image: url(../images/page-title-background.jpg) ;}
 #h3_ffaa_0{color: #ffffff ;}
 #i_ffaa_8{font-size: 20px ;color: #ffcf2a ;margin-right: 10px ;}
 #span_ffaa_2{font-size: 20px; color: #ffcf2a; font-weight: 600;}
