@@ -22,6 +22,9 @@ Beyond implementation, the project included basic search visibility consideratio
 - Image gallery for contextual exploration
 - Pricing and service visibility
 - Static deployment via GitHub Pages
+- Mobile-first layout using flexible grid and media queries
+- Breakpoints aligned to common device widths (320px, 768px, 1024px)
+- Image sizes optimized to reduce initial load time
 
 ---
 
@@ -88,6 +91,12 @@ Beyond implementation, the project included basic search visibility consideratio
 
 ---
 
+## Future Improvements
+
+- Introduce a backend for dynamic booking management
+- Add form validation and submission handling
+- Improve performance through asset bundling and compression
+---
 ## Context
 
 This project reflects early-stage experience building and deploying a production-facing system for a small business. It demonstrates an ability to move from loosely defined requirements to a functional and accessible solution.
